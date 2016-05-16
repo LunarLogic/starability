@@ -1,0 +1,45 @@
+.ratability-box {
+  display: block;
+  position: relative;
+  width: $star-count * $star-size;
+  min-height: 2 * $star-size;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+
+  > input {
+    position: absolute;
+    margin-right: -100%;
+    opacity: 0;
+  }
+
+  > input:checked ~ label,
+  > input:hover ~ label,
+  > input:focus ~ label {
+    background-position: 0 (-$star-size);
+  }
+
+  > input:focus + label {
+    border-bottom: 2px solid #999;
+  }
+
+  > label {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: $star-size;
+    height: $star-size;
+    color: transparent;
+    background-image: url('../images/icons.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  > label:before {
+    position: absolute;
+    content: ' ';
+    display: none;
+    width: $star-size;
+    height:  $star-size;
+  }
+}

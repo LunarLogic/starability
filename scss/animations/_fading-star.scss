@@ -1,0 +1,31 @@
+@keyframes fade {
+
+  0% {
+    transform: translateY($star-size);
+  }
+
+  80% {
+    opacity: 100%;
+  }
+
+  100% {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+.fading-star {
+
+  > label:before {
+    background: url('../images/icons.png') no-repeat;
+    background-position: 0 (-$star-size);
+    bottom: $star-size;
+  }
+
+  > input:checked + label:before {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}

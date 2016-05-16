@@ -1,0 +1,23 @@
+{
+  "name": "ratability",
+  "version": "0.1.0",
+  "description": "Small demo for accessible rating system",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rating",
+    "accessible",
+    "css"
+  ],
+  "author": "Anna Migas",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.1",
+    "run-sequence": "^1.1.5"
+  }
+}

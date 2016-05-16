@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 0 6rem;
+  background-color: white;
+  overflow-x: hidden;
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  font-weight: normal;
+  color: #666;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+a {
+  color: #00aeef;
+}
+
+a:hover, a:visited, a:focus {
+  color: #0076a3;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+form {
+  margin: 0 auto 3rem;
+}
+
+form:first-of-type {
+  margin-top: 3rem;
+}
+
+legend {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  position: absolute;
+  height: 6rem;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 0 2em;
+  text-align: center;
+}
+
+.ratability-box {
+  display: block;
+  position: relative;
+  width: 145px;
+  min-height: 58px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+
+.ratability-box > input {
+  position: absolute;
+  margin-right: -100%;
+  opacity: 0;
+}
+
+.ratability-box > input:checked ~ label,
+.ratability-box > input:hover ~ label,
+.ratability-box > input:focus ~ label {
+  background-position: 0 -29px;
+}
+
+.ratability-box > input:focus + label {
+  border-bottom: 2px solid #999;
+}
+
+.ratability-box > label {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 29px;
+  height: 29px;
+  color: transparent;
+  background-image: url("../images/icons.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.ratability-box > label:before {
+  position: absolute;
+  content: ' ';
+  display: none;
+  width: 29px;
+  height: 29px;
+}
+
+.slot-star > input:checked ~ label,
+.slot-star > input:hover ~ label,
+.slot-star > input:focus ~ label {
+  transition: background-position .7s;
+}
+
+@keyframes fade {
+  0% {
+    transform: translateY(29px);
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+.fading-star > label:before {
+  background: url("../images/icons.png") no-repeat;
+  background-position: 0 -29px;
+  bottom: 29px;
+}
+
+.fading-star > input:checked + label:before {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0, 0);
+  }
+  99% {
+    transform: scale(4, 4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+.growing-star > label:before {
+  background: url("../images/icons.png") no-repeat;
+  background-position: 0 -29px;
+  bottom: 0;
+}
+
+.growing-star > input:checked + label:before {
+  display: block;
+  animation-duration: 1s;
+  animation-name: grow;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow-rotate {
+  0% {
+    transform: scale(0, 0) rotate(0);
+  }
+  99% {
+    transform: scale(4, 4) rotate(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1) rotate(0);
+    opacity: 0;
+  }
+}
+
+.growing-rotating-star > label:before {
+  background: url("../images/icons.png") no-repeat;
+  background-position: 0 -29px;
+  bottom: 0;
+}
+
+.growing-rotating-star > input:checked + label:before {
+  display: block;
+  animation-duration: 1s;
+  animation-name: grow-rotate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes checkmark {
+  0% {
+    transform: translateX(-14.5px);
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    transform: none;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.checkmark > label {
+  background-image: url("../images/icons-checkmark.png");
+  position: static;
+  z-index: 2;
+}
+
+.checkmark > label:before {
+  background: url("../images/icons-checkmark.png") no-repeat;
+  background-position: 0 -58px;
+  color: red;
+  right: -29px;
+  z-index: 1;
+}
+
+.checkmark > input:checked + label:before {
+  display: block;
+  animation-name: checkmark;
+  animation-duration: .7s;
+  animation-fill-mode: forwards;
+}

@@ -1,0 +1,46 @@
+@keyframes checkmark {
+
+  0% {
+    transform: translateX(-0.5 * $star-size);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    transform: none;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.checkmark {
+
+  > label {
+    background-image: url('../images/icons-checkmark.png');
+    position: static;
+    z-index: 2;
+  }
+
+  > label:before {
+    background: url('../images/icons-checkmark.png') no-repeat;
+    background-position: 0 (-2*$star-size);
+    color: red;
+    right: -$star-size;
+    z-index: 1;
+  }
+
+  > input:checked + label:before {
+    display: block;
+    animation-name: checkmark;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+  }
+}

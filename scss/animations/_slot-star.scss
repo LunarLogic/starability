@@ -1,0 +1,8 @@
+.slot-star {
+
+  > input:checked ~ label,
+  > input:hover ~ label,
+  > input:focus ~ label {
+    transition: background-position .7s;
+  }
+}

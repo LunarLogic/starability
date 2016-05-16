@@ -1,0 +1,32 @@
+@keyframes grow-rotate {
+
+  0% {
+    transform: scale(0,0) rotate(0);
+  }
+
+  99% {
+    transform: scale(4,4) rotate(90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1,1) rotate(0);
+    opacity: 0;
+  }
+}
+
+.growing-rotating-star {
+
+  > label:before {
+    background: url('../images/icons.png') no-repeat;
+    background-position: 0 (-$star-size);
+    bottom: 0;
+  }
+
+  > input:checked + label:before {
+    display: block;
+    animation-duration: 1s;
+    animation-name: grow-rotate;
+    animation-fill-mode: forwards;
+  }
+}
