@@ -78,7 +78,7 @@ footer {
 }
 
 .ratability-box > input:focus + label {
-  border-bottom: 2px solid #999;
+  outline: 1px dotted #999;
 }
 
 .ratability-box > label {

@@ -19,8 +19,10 @@
     background-position: 0 (-$star-size);
   }
 
-  > input:focus + label {
-    border-bottom: 2px solid #999;
+  @if ($accessible-highlight) {
+    > input:focus + label {
+      outline: 1px dotted #999;
+    }
   }
 
   > label {
