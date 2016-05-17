@@ -35,6 +35,11 @@
     background-image: url('../images/icons.png');
     background-repeat: no-repeat;
     cursor: pointer;
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('../images/icons@2x.png');
+      background-size: 30px auto;
+    }
   }
 
   > label:before {

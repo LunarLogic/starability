@@ -27,6 +27,10 @@
     background-image: url('../images/icons-checkmark.png');
     position: static;
     z-index: 2;
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('../images/icons-checkmark@2x.png');
+    }
   }
 
   > label:before {
@@ -35,6 +39,11 @@
     color: red;
     right: -$star-size;
     z-index: 1;
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('../images/icons-checkmark@2x.png');
+      background-size: 30px auto;
+    }
   }
 
   > input:checked + label:before {

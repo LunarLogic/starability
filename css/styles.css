@@ -93,6 +93,13 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .ratability-box > label {
+    background-image: url("../images/icons@2x.png");
+    background-size: 30px auto;
+  }
+}
+
 .ratability-box > label:before {
   position: absolute;
   content: ' ';
@@ -126,6 +133,13 @@ footer {
   bottom: 29px;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .fading-star > label:before {
+    background-image: url("../images/icons@2x.png");
+    background-size: 30px auto;
+  }
+}
+
 .fading-star > input:checked + label:before {
   display: block;
   animation-name: fade;
@@ -135,7 +149,7 @@ footer {
 
 @keyframes grow {
   0% {
-    transform: scale(0, 0);
+    transform: scale(1, 1);
   }
   99% {
     transform: scale(4, 4);
@@ -153,6 +167,13 @@ footer {
   bottom: 0;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .growing-star > label:before {
+    background-image: url("../images/icons@2x.png");
+    background-size: 30px auto;
+  }
+}
+
 .growing-star > input:checked + label:before {
   display: block;
   animation-duration: 1s;
@@ -162,7 +183,7 @@ footer {
 
 @keyframes grow-rotate {
   0% {
-    transform: scale(0, 0) rotate(0);
+    transform: scale(1, 1) rotate(0);
   }
   99% {
     transform: scale(4, 4) rotate(90deg);
@@ -178,6 +199,13 @@ footer {
   background: url("../images/icons.png") no-repeat;
   background-position: 0 -29px;
   bottom: 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .growing-rotating-star > label:before {
+    background-image: url("../images/icons@2x.png");
+    background-size: 30px auto;
+  }
 }
 
 .growing-rotating-star > input:checked + label:before {
@@ -211,12 +239,25 @@ footer {
   z-index: 2;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .checkmark > label {
+    background-image: url("../images/icons-checkmark@2x.png");
+  }
+}
+
 .checkmark > label:before {
   background: url("../images/icons-checkmark.png") no-repeat;
   background-position: 0 -58px;
   color: red;
   right: -29px;
   z-index: 1;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .checkmark > label:before {
+    background-image: url("../images/icons-checkmark@2x.png");
+    background-size: 30px auto;
+  }
 }
 
 .checkmark > input:checked + label:before {

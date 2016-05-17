@@ -20,6 +20,11 @@
     background: url('../images/icons.png') no-repeat;
     background-position: 0 (-$star-size);
     bottom: $star-size;
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url('../images/icons@2x.png');
+      background-size: 30px auto;
+    }
   }
 
   > input:checked + label:before {
