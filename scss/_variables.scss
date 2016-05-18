@@ -2,5 +2,8 @@ $star-count: 5;
 $star-size: 29px;
 
 
-// change to true to have an underline below active star
+// if true there is an underline below active star
 $accessible-highlight: true;
+
+// if true, stars are highlighted on hover (causes website repaints)
+$hover-enabled: true;

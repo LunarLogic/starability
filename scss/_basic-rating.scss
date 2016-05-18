@@ -14,9 +14,14 @@
   }
 
   > input:checked ~ label,
-  > input:hover ~ label,
   > input:focus ~ label {
     background-position: 0 (-$star-size);
+  }
+
+  @if ($hover-enabled) {
+     > input:hover ~ label {
+      background-position: 0 (-$star-size);
+    }
   }
 
   @if ($accessible-highlight) {

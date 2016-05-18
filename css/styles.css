@@ -72,8 +72,11 @@ footer {
 }
 
 .ratability-box > input:checked ~ label,
-.ratability-box > input:hover ~ label,
 .ratability-box > input:focus ~ label {
+  background-position: 0 -29px;
+}
+
+.ratability-box > input:hover ~ label {
   background-position: 0 -29px;
 }
 
