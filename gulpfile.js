@@ -10,7 +10,8 @@ gulp.task('output-css', function() {
   .pipe(sass({outputStyle: 'expanded'}))
   .pipe(autoprefixer('last 2 versions'))
   .pipe(rename({
-    dirname: 'starability-css'
+    dirname: 'starability-css',
+    prefix: 'starability-',
   }))
   .pipe(gulp.dest('./'))
   .pipe(rename({

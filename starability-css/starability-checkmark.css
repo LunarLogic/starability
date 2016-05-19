@@ -52,13 +52,13 @@
   height: 30px;
   color: transparent;
   cursor: pointer;
-  background-image: url("../images/icons-checkmark.png");
+  background-image: url("../starability-images/icons-checkmark.png");
   background-repeat: no-repeat;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .starability-checkmark > label {
-    background-image: url("../images/icons-checkmark@2x.png");
+    background-image: url("../starability-images/icons-checkmark@2x.png");
     background-size: 30px auto;
   }
 }
@@ -74,7 +74,7 @@
   content: ' ';
   width: 30px;
   height: 30px;
-  background-image: url("../images/icons-checkmark.png");
+  background-image: url("../starability-images/icons-checkmark.png");
   background-repeat: no-repeat;
   background-position: 0 -60px;
   right: -30px;
@@ -82,7 +82,7 @@
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .starability-checkmark > label:before {
-    background-image: url("../images/icons-checkmark@2x.png");
+    background-image: url("../starability-images/icons-checkmark@2x.png");
     background-size: 30px auto;
   }
 }

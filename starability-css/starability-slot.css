@@ -34,13 +34,13 @@
   height: 30px;
   color: transparent;
   cursor: pointer;
-  background-image: url("../images/icons.png");
+  background-image: url("../starability-images/icons.png");
   background-repeat: no-repeat;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .starability-slot > label {
-    background-image: url("../images/icons@2x.png");
+    background-image: url("../starability-images/icons@2x.png");
     background-size: 30px auto;
   }
 }
