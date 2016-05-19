@@ -1,4 +1,8 @@
-.slot-star {
+@import '../variables';
+@import '../starability-base';
+
+.starability-slot {
+  @include starability-base;
 
   > input:checked ~ label,
   > input:hover ~ label,

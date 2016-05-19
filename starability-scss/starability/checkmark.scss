@@ -1,0 +1,47 @@
+@import '../variables';
+@import '../starability-base';
+
+@keyframes checkmark {
+
+  0% {
+    transform: translateX(-0.5 * $star-size);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    transform: none;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.starability-checkmark {
+  @include starability-base('icons-checkmark');
+
+  > label {
+    position: static;
+    z-index: 2;
+  }
+
+  > label:before {
+    @include starability-animation-base('icons-checkmark');
+    background-position: 0 (-2*$star-size);
+    right: -$star-size;
+  }
+
+  > input:checked + label:before {
+    display: block;
+    animation-name: checkmark;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+  }
+}

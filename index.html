@@ -1,151 +1,32 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Accessible rating demo</title>
-
-  <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <title>Accessible rating example</title>
+  <link rel="stylesheet" type="text/css" href="starability-minified/all.min.css"/>
 </head>
 
 <body>
-  <main>
-    <h1> Sugarcoated rating.  </h1>
-    <h2> Accessible to everyone. </h2>
-    <form>
-      <fieldset class="ratability-box">
-        <legend>Default star rating:</legend>
+  <form>
+    <fieldset class="starability-basic"> <!-- Change starability-basic to different class to see animations. !-->
+      <legend>Basic star rating:</legend>
 
-        <input type="radio" id="rate5" name="rating" value="5" />
-        <label for="rate5" title="Amazing">5 stars</label>
+      <input type="radio" id="rate5" name="rating" value="5" />
+      <label for="rate5" title="Amazing">5 stars</label>
 
-        <input type="radio" id="rate4" name="rating" value="4" />
-        <label for="rate4" title="Very good">4 stars</label>
+      <input type="radio" id="rate4" name="rating" value="4" />
+      <label for="rate4" title="Very good">4 stars</label>
 
-        <input type="radio" id="rate3" name="rating" value="3" />
-        <label for="rate3" title="Average">3 stars</label>
+      <input type="radio" id="rate3" name="rating" value="3" />
+      <label for="rate3" title="Average">3 stars</label>
 
-        <input type="radio" id="rate2" name="rating" value="2" />
-        <label for="rate2" title="Not good">2 stars</label>
+      <input type="radio" id="rate2" name="rating" value="2" />
+      <label for="rate2" title="Not good">2 stars</label>
 
-        <input type="radio" id="rate1" name="rating" value="1" />
-        <label for="rate1" title="Terrible">1 star</label>
-      </fieldset>
-    </form>
-
-    <form>
-      <fieldset class="ratability-box slot-star">
-        <legend>Slot machine rating:</legend>
-
-        <input type="radio" id="slot-rate5" name="rating" value="5" />
-        <label for="slot-rate5" title="Amazing">5 stars</label>
-
-        <input type="radio" id="slot-rate4" name="rating" value="4" />
-        <label for="slot-rate4" title="Very good">4 stars</label>
-
-        <input type="radio" id="slot-rate3" name="rating" value="3" />
-        <label for="slot-rate3" title="Average">3 stars</label>
-
-        <input type="radio" id="slot-rate2" name="rating" value="2" />
-        <label for="slot-rate2" title="Not good">2 stars</label>
-
-        <input type="radio" id="slot-rate1" name="rating" value="1" />
-        <label for="slot-rate1" title="Terrible">1 star</label>
-      </fieldset>
-    </form>
-
-    <form>
-      <fieldset class="ratability-box growing-star">
-        <legend>Growing star rating:</legend>
-
-        <input type="radio" id="growing-rate5" name="rating" value="5" />
-        <label for="growing-rate5" title="Amazing">5 stars</label>
-
-        <input type="radio" id="growing-rate4" name="rating" value="4" />
-        <label for="growing-rate4" title="Very good">4 stars</label>
-
-        <input type="radio" id="growing-rate3" name="rating" value="3" />
-        <label for="growing-rate3" title="Average">3 stars</label>
-
-        <input type="radio" id="growing-rate2" name="rating" value="2" />
-        <label for="growing-rate2" title="Not good">2 stars</label>
-
-        <input type="radio" id="growing-rate1" name="rating" value="1" />
-        <label for="growing-rate1" title="Terrible">1 star</label>
-      </fieldset>
-    </form>
-
-    <form>
-      <fieldset class="ratability-box growing-rotating-star">
-        <legend>Growing & rotating star rating:</legend>
-
-        <input type="radio" id="growing-rotating-rate5" name="rating" value="5" />
-        <label for="growing-rotating-rate5" title="Amazing">5 stars</label>
-
-        <input type="radio" id="growing-rotating-rate4" name="rating" value="4" />
-        <label for="growing-rotating-rate4" title="Very good">4 stars</label>
-
-        <input type="radio" id="growing-rotating-rate3" name="rating" value="3" />
-        <label for="growing-rotating-rate3" title="Average">3 stars</label>
-
-        <input type="radio" id="growing-rotating-rate2" name="rating" value="2" />
-        <label for="growing-rotating-rate2" title="Not good">2 stars</label>
-
-        <input type="radio" id="growing-rotating-rate1" name="rating" value="1" />
-        <label for="growing-rotating-rate1" title="Terrible">1 star</label>
-      </fieldset>
-    </form>
-
-    <form>
-      <fieldset class="ratability-box fading-star">
-        <legend>Fading star rating:</legend>
-
-        <input type="radio" id="fading-rate5" name="rating" value="5" />
-        <label for="fading-rate5" title="Amazing">5 stars</label>
-
-        <input type="radio" id="fading-rate4" name="rating" value="4" />
-        <label for="fading-rate4" title="Very good">4 stars</label>
-
-        <input type="radio" id="fading-rate3" name="rating" value="3" />
-        <label for="fading-rate3" title="Average">3 stars</label>
-
-        <input type="radio" id="fading-rate2" name="rating" value="2" />
-        <label for="fading-rate2" title="Not good">2 stars</label>
-
-        <input type="radio" id="fading-rate1" name="rating" value="1" />
-        <label for="fading-rate1" title="Terrible">1 star</label>
-      </fieldset>
-    </form>
-    <form>
-      <fieldset class="ratability-box checkmark">
-        <legend>Checkmark rating:</legend>
-
-        <input type="radio" id="checkmark-rate5" name="rating" value="5" />
-        <label for="checkmark-rate5" title="Amazing">5 stars</label>
-
-        <input type="radio" id="checkmark-rate4" name="rating" value="4" />
-        <label for="checkmark-rate4" title="Very good">4 stars</label>
-
-        <input type="radio" id="checkmark-rate3" name="rating" value="3" />
-        <label for="checkmark-rate3" title="Average">3 stars</label>
-
-        <input type="radio" id="checkmark-rate2" name="rating" value="2" />
-        <label for="checkmark-rate2" title="Not good">2 stars</label>
-
-        <input type="radio" id="checkmark-rate1" name="rating" value="1" />
-        <label for="checkmark-rate1" title="Terrible">1 star</label>
-      </fieldset>
-    </form>
-  </main>
-  <footer role="contentinfo">
-    <p>
-      Created with love by <a href="http://www.lunarlogic.io/?utm_source=github&utm_medium=opensource&utm_campaign=accessibility-keyboard" taget="_blank">Lunar Logic</a>.
-    </p>
-    <p>
-      Want to build an amazing web experience with Ruby on Rails or React? We’re available to hire. <a href="http://www.lunarlogic.io/?utm_source=github&utm_medium=opensource&utm_campaign=accessibility-keyboard#contact" target="_blank">Contact us</a>.
-    </p>
-  </footer>
+      <input type="radio" id="rate1" name="rating" value="1" />
+      <label for="rate1" title="Terrible">1 star</label>
+    </fieldset>
+  </form>
 </body>
 </html>

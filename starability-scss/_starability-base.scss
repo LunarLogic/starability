@@ -1,9 +1,10 @@
-.ratability-box {
+@import '../variables';
+
+@mixin starability-base($bg-image-path: 'icons') {
   display: block;
   position: relative;
   width: $star-count * $star-size;
   min-height: 2 * $star-size;
-  margin: 0 auto;
   padding: 0;
   border: none;
 
@@ -19,7 +20,7 @@
   }
 
   @if ($hover-enabled) {
-     > input:hover ~ label {
+    > input:hover ~ label {
       background-position: 0 (-$star-size);
     }
   }
@@ -37,21 +38,28 @@
     width: $star-size;
     height: $star-size;
     color: transparent;
-    background-image: url('../images/icons.png');
-    background-repeat: no-repeat;
     cursor: pointer;
+    background-image: url('../images/#{$bg-image-path}.png');
+    background-repeat: no-repeat;
 
     @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url('../images/icons@2x.png');
-      background-size: 30px auto;
+      background-image: url('../images/#{$bg-image-path}@2x.png');
+      background-size: $star-size auto;
     }
   }
+}
 
-  > label:before {
-    position: absolute;
-    content: ' ';
-    display: none;
-    width: $star-size;
-    height:  $star-size;
+@mixin starability-animation-base($bg-image-path: 'icons') {
+  display: none;
+  position: absolute;
+  content: ' ';
+  width: $star-size;
+  height:  $star-size;
+  background-image: url('../images/#{$bg-image-path}.png');
+  background-repeat: no-repeat;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('../images/#{$bg-image-path}@2x.png');
+    background-size: $star-size auto;
   }
 }
