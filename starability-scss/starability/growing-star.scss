@@ -1,3 +1,6 @@
+@import '../variables';
+@import '../starability-base';
+
 @keyframes grow {
 
   0% {
@@ -15,17 +18,12 @@
   }
 }
 
-.growing-star {
+.starability-grow {
+  @include starability-base;
 
   > label:before {
-    background: url('../images/icons.png') no-repeat;
-    background-position: 0 (-$star-size);
+    @include starability-animation-base;
     bottom: 0;
-
-    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url('../images/icons@2x.png');
-      background-size: 30px auto;
-    }
   }
 
   > input:checked + label:before {

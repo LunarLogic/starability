@@ -1,6 +1,7 @@
 $footer-height: 6rem;
-$lunar-color: #00aeef;
-$lunar-color-active: darken($lunar-color, 15);
+
+$main-color: #27ae60;
+$main-color-active: lighten($main-color, 10);
 
 * {
   box-sizing: border-box;
@@ -25,13 +26,17 @@ h1, h2 {
   text-align: center;
 }
 
+h1 {
+  color: $main-color;
+}
+
 a {
-  color: $lunar-color;
+  color: $main-color;
 
   &:hover,
   &:visited,
   &:focus {
-    color: $lunar-color-active;
+    color: $main-color-active;
   }
 }
 
@@ -47,6 +52,10 @@ form {
   }
 }
 
+fieldset {
+  margin: 0 auto;
+}
+
 legend {
   margin-bottom: 0.5rem;
 }
@@ -60,4 +69,3 @@ footer {
   padding: 0 2em;
   text-align: center;
 }
-

@@ -4,18 +4,20 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Accessible rating demo</title>
+  <title>Starability - Accessible rating system demo</title>
 
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="starability-minified/demo-styles.min.css"/>
 </head>
 
 <body>
   <main>
-    <h1> Sugarcoated rating.  </h1>
-    <h2> Accessible to everyone. </h2>
+    <headergroup>
+      <h1> Starability.css</h1>
+      <h2> Sugarcoated rating. Accessible to everyone. </h2>
+    </headergroup>
     <form>
-      <fieldset class="ratability-box">
+      <fieldset class="starability-basic">
         <legend>Default star rating:</legend>
 
         <input type="radio" id="rate5" name="rating" value="5" />
@@ -36,7 +38,7 @@
     </form>
 
     <form>
-      <fieldset class="ratability-box slot-star">
+      <fieldset class="starability-slot">
         <legend>Slot machine rating:</legend>
 
         <input type="radio" id="slot-rate5" name="rating" value="5" />
@@ -57,7 +59,7 @@
     </form>
 
     <form>
-      <fieldset class="ratability-box growing-star">
+      <fieldset class="starability-grow">
         <legend>Growing star rating:</legend>
 
         <input type="radio" id="growing-rate5" name="rating" value="5" />
@@ -78,7 +80,7 @@
     </form>
 
     <form>
-      <fieldset class="ratability-box growing-rotating-star">
+      <fieldset class="starability-growRotate">
         <legend>Growing & rotating star rating:</legend>
 
         <input type="radio" id="growing-rotating-rate5" name="rating" value="5" />
@@ -99,7 +101,7 @@
     </form>
 
     <form>
-      <fieldset class="ratability-box fading-star">
+      <fieldset class="starability-fade">
         <legend>Fading star rating:</legend>
 
         <input type="radio" id="fading-rate5" name="rating" value="5" />
@@ -119,7 +121,7 @@
       </fieldset>
     </form>
     <form>
-      <fieldset class="ratability-box checkmark">
+      <fieldset class="starability-checkmark">
         <legend>Checkmark rating:</legend>
 
         <input type="radio" id="checkmark-rate5" name="rating" value="5" />

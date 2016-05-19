@@ -11,12 +11,17 @@
     "accessible",
     "css"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LunarLogic/starability.git"
+  },
   "author": "Anna Migas",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "run-sequence": "^1.1.5"
   }

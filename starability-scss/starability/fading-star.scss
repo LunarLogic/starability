@@ -1,3 +1,6 @@
+@import '../variables';
+@import '../starability-base';
+
 @keyframes fade {
 
   0% {
@@ -14,17 +17,13 @@
   }
 }
 
-.fading-star {
+.starability-fade {
+  @include starability-base;
 
   > label:before {
-    background: url('../images/icons.png') no-repeat;
+    @include starability-animation-base;
     background-position: 0 (-$star-size);
     bottom: $star-size;
-
-    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url('../images/icons@2x.png');
-      background-size: 30px auto;
-    }
   }
 
   > input:checked + label:before {

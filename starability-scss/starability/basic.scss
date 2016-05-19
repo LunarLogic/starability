@@ -1,0 +1,6 @@
+@import '../variables';
+@import '../starability-base';
+
+.starability-basic {
+  @include starability-base;
+}

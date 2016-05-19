@@ -1,22 +1,32 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var cssnano = require('gulp-cssnano');
 var runSequence = require('run-sequence');
 
-gulp.task('sass-demo', function() {
-  return gulp.src('scss/styles.scss')
+gulp.task('output-css', function() {
+  return gulp.src('starability-scss/**/*.scss')
   .pipe(sass({outputStyle: 'expanded'}))
   .pipe(autoprefixer('last 2 versions'))
-  .pipe(gulp.dest('css'));
+  .pipe(rename({
+    dirname: 'starability-css'
+  }))
+  .pipe(gulp.dest('./'))
+  .pipe(cssnano())
+  .pipe(rename({
+    dirname: 'starability-minified',
+    suffix: '.min'
+  }))
+  .pipe(gulp.dest('./'));
 });
 
 gulp.task('watch', function() {
-  gulp.watch('scss/**/*.scss', ['sass-demo']);
+  gulp.watch('scss/**/*.scss', ['output-css']);
 });
 
 gulp.task('default', function(callback) {
-  runSequence(['sass-demo', 'watch'],
+  runSequence(['output-css', 'watch'],
     callback
   );
 });
