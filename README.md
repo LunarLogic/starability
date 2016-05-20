@@ -8,24 +8,24 @@ Accessible rating forms with cute animations on top. Name is the combination of 
 
 [You can check how Starability.css looks here.](http://lunarlogic.github.io/starability/)
 
-## How to use
+## Folder Structure
 
 **This step by step tutorial is based on an assumption that your file structure in project directory looks as it follows:**
 
-- index.html
-- /css
-  - css file with chosen rating (eg.: starability-fade.min.css)
-- /starability-images
-  - icons.png
-  - icons@2x.png
-  - icons-checkmark.png *(include this file if you are going to use checkmark rating)*
-  - icons-checkmar@2x.png *(include this file if you are going to use checkmark rating)*
+* index.html
+* /css
+  * css file with chosen rating (eg.: starability-fade.min.css)
+* /starability-images
+  * icons.png
+  * icons@2x.png
+  * icons-checkmark.png *(include this file if you are going to use checkmark rating)*
+  * icons-checkmar@2x.png *(include this file if you are going to use checkmark rating)*
 
 If you have different file structure, remember to update file paths for icons (in css files) and css stylesheet link (in HTML <head>).
 
----
+## How to use
 
-1. First [copy the structure of HTML](https://github.com/LunarLogic/starability/blob/master/index.html) (fieldset and insides), to make sure the styles work correctly. We rely heavily here on the structure. Notice that the radio buttons order is inverted: we start with number 5 and go all way down to 1. Go to Lea Verou's [blogpost](http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/), to find out why. If you want more than one rating widget on the same page, remember that the **id's need to be different for each radio buttons collection**:
+1. [Copy the structure of HTML](https://github.com/LunarLogic/starability/blob/master/index.html) (fieldset and insides), to make sure the styles work correctly.  If you want more than one rating widget on the same page, remember that the **id's need to be different for each radio buttons collection**:
 
     ```html
 
@@ -58,11 +58,11 @@ If you have different file structure, remember to update file paths for icons (i
     </fieldset>
     ```
 
-2.  Now you can decide which animation works best for your app. Add a stylesheet with its name inside your website's <head> element. There are [the minified versions](https://github.com/LunarLogic/starability/tree/master/starability-minified) or [the expanded versions](https://github.com/LunarLogic/starability/tree/master/starability-css). Let's say we want fading animation:
+2. Add a stylesheet with a name of an animation works best for your app name inside your website's <head> element. There are [the minified versions](https://github.com/LunarLogic/starability/tree/master/starability-minified) or [standard css files](https://github.com/LunarLogic/starability/tree/master/starability-css). Let's say we want fading animation:
 
     ```html
     <head>
-      <link rel="stylesheet" type="text/css" href="path-to-css-directory/starability-fade.min.css"/>
+      <link rel="stylesheet" type="text/css" href="css/starability-fade.min.css"/>
     </head>
     ```
 
@@ -70,16 +70,16 @@ If you have different file structure, remember to update file paths for icons (i
 
     ```html
     <head>
-      <link rel="stylesheet" type="text/css" href="path-to-css-directory/starability-all.min.css"/>
+      <link rel="stylesheet" type="text/css" href="css/starability-all.min.css"/>
     </head>
     ```
-3.Add chosen rating version class name to the fieldset element in your HTML. For our fading animation you would have to add '.starability-fade' class:
+3. Add chosen rating version class name to the fieldset element in your HTML. For our fading animation you would have to add '.starability-fade' class:
 
     ```html
     <fieldset class="starability-fade">
     ```
 
-4. Include icon files in your app. CSS files use a relative path "../images/icons.png". You might want to change that if your file structure looks different than one proposed at the top.
+4. Include icon files in your images directory. CSS files use a relative path "../images/icons.png". You might want to change that if your file structure looks different than one proposed at the top.
 
 ## List of rating animations
 
