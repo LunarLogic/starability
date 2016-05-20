@@ -1,22 +1,23 @@
 {
-  "name": "ratability",
+  "name": "starability",
   "version": "0.1.0",
-  "description": "Small demo for accessible rating system",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Accessible rating system without JavaScript",
+  "main": "./starability-css/starability-all.css",
+  "author": "Anna Migas <amjmigas@gmail.com>",
   "keywords": [
     "rating",
-    "accessible",
-    "css"
+    "accessibility",
+    "css",
+    "sass",
+    "scss",
+    "animations"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/LunarLogic/starability.git"
   },
-  "author": "Anna Migas",
   "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",

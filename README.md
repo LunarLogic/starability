@@ -58,6 +58,7 @@ If you have different file structure, remember to update file paths for icons (i
     </fieldset>
     ```
 
+
 2. Add a stylesheet with a name of an animation works best for your app name inside your website's <head> element. There are [the minified versions](https://github.com/LunarLogic/starability/tree/master/starability-minified) or [standard css files](https://github.com/LunarLogic/starability/tree/master/starability-css). Let's say we want fading animation:
 
     ```html
@@ -73,11 +74,14 @@ If you have different file structure, remember to update file paths for icons (i
       <link rel="stylesheet" type="text/css" href="css/starability-all.min.css"/>
     </head>
     ```
+
+
 3. Add chosen rating version class name to the fieldset element in your HTML. For our fading animation you would have to add '.starability-fade' class:
 
     ```html
     <fieldset class="starability-fade">
     ```
+
 
 4. Include icon files in your images directory. CSS files use a relative path "../images/icons.png". You might want to change that if your file structure looks different than one proposed at the top.
 
@@ -91,6 +95,18 @@ For now you can choose one of versions listed below. Go to [demo](http://lunarlo
   - starability-growRotate
   - starablity-fade
   - starability-checkmark
+
+## Disabling hover action
+
+This rating system by default reacts to :hover, changing background image position. This is an operation that causes webiste repaints. If you want to make your website as light as possible, you can remove declaration that will highlight stars on hover:
+
+```html
+.starability-fade > input:hover ~ label {
+  background-position: 0 -30px;
+}
+```
+
+If you are using scss, you can download scss files and set variable $hover-enabled to false in [_variables.scss file](https://github.com/LunarLogic/starability/blob/master/starability-scss/_variables.scss).
 
 ## Changelog
 
