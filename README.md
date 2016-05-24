@@ -96,6 +96,10 @@ For now you can choose one of versions listed below. Go to [demo](http://lunarlo
   - starablity-fade
   - starability-checkmark
 
+## Supported browsers
+
+Starability.css works in IE10+ and all modern browsers. If you want to support browsers below IE10, you should disable animations for them for example using [Modernizr](https://modernizr.com/).
+
 ## Disabling hover action
 
 This rating system by default reacts to :hover, changing background image position. This is an operation that causes webiste repaints. If you want to make your website as light as possible, you can remove declaration that will highlight stars on hover:
@@ -106,7 +110,11 @@ This rating system by default reacts to :hover, changing background image positi
 }
 ```
 
-If you are using scss, you can download scss files and set variable $hover-enabled to false in [_variables.scss file](https://github.com/LunarLogic/starability/blob/master/starability-scss/_variables.scss).
+## Further customisation with SASS
+
+If you are verse with SASS you can easily adjust rating widget to your needs, e.g. have 10 star based system or turn off outline and hover. It can be done by setting true/false values to the variables in [_variables.scss file](https://github.com/LunarLogic/starability/blob/master/starability-scss/_variables.scss) and running gulp task to process files. Of course to have 10 stars system you also need add additional radio inputs in your HTML.
+
+If you are not using scss syntax, you can also have a 10 star based system. Just remember to change width of the fieldset element in your css, so that the stars would all fit it (for example for 10 stars width of fieldset should be 10x width of a star, so 300px).
 
 ## Changelog
 
