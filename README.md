@@ -1,4 +1,4 @@
-# Starability.css
+# Starability.css - Accessible rating with animations on top
 
 Accessible rating forms with cute animations on top. Name is the combination of two words: star and accessibility (or ability in general, whatever pleases you). Starability ratings are done in pure HTML and CSS, and are accessible by keyboard, so even people using screen readers are able to use it. To achieve this effect I am using sibling combinators technique that was introduced by [Lea Verou](http://lea.verou.me) in ["Accessible star rating widget with pure CSS" blogpost](http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/). The goal of this small library was to combine this technique with neat animations and make it easy to quickly apply it to your website.
 
