@@ -1,6 +1,8 @@
-# Ratability.css
+# Starability.css
 
-Accessible rating forms with cute animations on top.
+Starability.css - Accessible rating forms with cute animations on top.
+
+This is a branch that has code for demo page, to download library you can switch to branch 'master'.
 
 ## License
 
