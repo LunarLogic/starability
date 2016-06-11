@@ -42,7 +42,7 @@
     background-image: url('../starability-images/#{$bg-image-path}.png');
     background-repeat: no-repeat;
 
-    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media screen and (min-resolution: 192dpi) {
       background-image: url('../starability-images/#{$bg-image-path}@2x.png');
       background-size: $star-size auto;
     }
@@ -58,7 +58,7 @@
   background-image: url('../starability-images/#{$bg-image-path}.png');
   background-repeat: no-repeat;
 
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  @media screen and (min-resolution: 192dpi) {
     background-image: url('../starability-images/#{$bg-image-path}@2x.png');
     background-size: $star-size auto;
   }

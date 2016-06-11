@@ -56,7 +56,7 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
   .starability-checkmark > label {
     background-image: url("../starability-images/icons-checkmark@2x.png");
     background-size: 30px auto;
@@ -80,7 +80,7 @@
   right: -30px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
   .starability-checkmark > label:before {
     background-image: url("../starability-images/icons-checkmark@2x.png");
     background-size: 30px auto;
