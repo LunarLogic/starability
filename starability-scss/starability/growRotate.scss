@@ -4,7 +4,7 @@
 @keyframes grow-rotate {
 
   0% {
-    transform: scale(1,1) rotate(0);
+    transform: scale(1,1) rotate(0deg);
   }
 
   99% {
@@ -13,7 +13,7 @@
   }
 
   100% {
-    transform: scale(1,1) rotate(0);
+    transform: scale(1,1) rotate(0deg);
     opacity: 0;
   }
 }
@@ -27,6 +27,7 @@
   }
 
   > input:checked + label:before {
+    background-position: 0 (-$star-size);
     display: block;
     animation-duration: 1s;
     animation-name: grow-rotate;
