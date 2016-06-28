@@ -27,6 +27,7 @@
   }
 
   > input:checked + label:before {
+    background-position: 0 (-$star-size);
     display: block;
     animation-duration: 1s;
     animation-name: grow;

@@ -1,13 +1,13 @@
 @keyframes grow-rotate {
   0% {
-    transform: scale(1, 1) rotate(0);
+    transform: scale(1, 1) rotate(0deg);
   }
   99% {
     transform: scale(4, 4) rotate(90deg);
     opacity: 0;
   }
   100% {
-    transform: scale(1, 1) rotate(0);
+    transform: scale(1, 1) rotate(0deg);
     opacity: 0;
   }
 }
@@ -78,6 +78,7 @@
 }
 
 .starability-growRotate > input:checked + label:before {
+  background-position: 0 -30px;
   display: block;
   animation-duration: 1s;
   animation-name: grow-rotate;
