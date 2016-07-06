@@ -93,7 +93,7 @@ For now you can choose one of versions listed below. Go to [demo](http://lunarlo
   - starability-slot
   - starability-grow
   - starability-growRotate
-  - starablity-fade
+  - starability-fade
   - starability-checkmark
 
 ## Supported browsers
