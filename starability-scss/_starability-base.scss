@@ -39,11 +39,11 @@
     height: $star-size;
     color: transparent;
     cursor: pointer;
-    background-image: url('../starability-images/#{$bg-image-path}.png');
+    background-image: url('#{$image-directory-path}/#{$bg-image-path}.png');
     background-repeat: no-repeat;
 
     @media screen and (min-resolution: 192dpi) {
-      background-image: url('../starability-images/#{$bg-image-path}@2x.png');
+      background-image: url('#{$image-directory-path}/#{$bg-image-path}@2x.png');
       background-size: $star-size auto;
     }
   }
@@ -55,11 +55,11 @@
   content: ' ';
   width: $star-size;
   height:  $star-size;
-  background-image: url('../starability-images/#{$bg-image-path}.png');
+  background-image: url('#{$image-directory-path}/#{$bg-image-path}.png');
   background-repeat: no-repeat;
 
   @media screen and (min-resolution: 192dpi) {
-    background-image: url('../starability-images/#{$bg-image-path}@2x.png');
+    background-image: url('#{$image-directory-path}/#{$bg-image-path}@2x.png');
     background-size: $star-size auto;
   }
 }
