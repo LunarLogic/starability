@@ -1,10 +1,10 @@
-$star-count: 5;
-$star-size: 30px;
+$star-count: 5 !default;
+$star-size: 30px !default;
 
-$image-directory-path: '../starability-images';
+$image-directory-path: '../starability-images' !default;
 
 // if true there is an underline below active star
-$accessible-highlight: true;
+$accessible-highlight: true !default;
 
 // if true, stars are highlighted on hover (causes website repaints)
-$hover-enabled: true;
+$hover-enabled: true !default;
