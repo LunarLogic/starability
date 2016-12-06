@@ -8,43 +8,62 @@
   padding: 0;
   border: none;
 
-  > input {
-    position: absolute;
-    margin-right: -100%;
-    opacity: 0;
-  }
+  > {
+    input {
+      position: absolute;
+      margin-left: -100%;
+      opacity: 0;
 
-  > input:checked ~ label,
-  > input:focus ~ label {
-    background-position: 0 (-$star-size);
+      &:first-of-type + label {
+        position: absolute;
+        margin-left: -100%;
+        opacity: 0;
+      }
+
+      &:checked, &:focus {
+        ~ label { background-position: 0 0; }
+        + label { background-position: 0 (-$star-size); }
+      }
+
+      @if ($accessible-highlight) {
+        &:first-of-type:checked:focus {
+          ~ label { outline: 1px dotted #999; }
+        }
+        &:focus {
+          + label { outline: 1px dotted #999; }
+        }
+      }
+    }
+
+    label {
+      position: relative;
+      display: inline-block;
+      float: left;
+      width: $star-size;
+      height: $star-size;
+      color: transparent;
+      cursor: pointer;
+      background-image: url('#{$image-directory-path}/#{$bg-image-path}.png');
+      background-position: 0 (-$star-size);
+      background-repeat: no-repeat;
+
+      @media screen and (min-resolution: 192dpi) {
+        background-image: url('#{$image-directory-path}/#{$bg-image-path}@2x.png');
+        background-size: $star-size auto;
+      }
+    }
   }
 
   @if ($hover-enabled) {
-    > input:hover ~ label {
-      background-position: 0 (-$star-size);
-    }
-  }
+    &:hover {
+      > {
+        label { background-position: 0 (-$star-size) !important; }
 
-  @if ($accessible-highlight) {
-    > input:focus + label {
-      outline: 1px dotted #999;
-    }
-  }
-
-  > label {
-    position: relative;
-    display: inline-block;
-    float: right;
-    width: $star-size;
-    height: $star-size;
-    color: transparent;
-    cursor: pointer;
-    background-image: url('#{$image-directory-path}/#{$bg-image-path}.png');
-    background-repeat: no-repeat;
-
-    @media screen and (min-resolution: 192dpi) {
-      background-image: url('#{$image-directory-path}/#{$bg-image-path}@2x.png');
-      background-size: $star-size auto;
+        input:hover {
+          ~ label { background-position: 0 0 !important; }
+          + label { background-position: 0 (-$star-size) !important; }
+        }
+      }
     }
   }
 }
