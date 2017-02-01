@@ -25,7 +25,7 @@
 }
 
 .starability-checkmark {
-  @include starability-base('icons-checkmark');
+  @include starability-base();
 
   > label {
     position: static;
@@ -33,9 +33,14 @@
   }
 
   > label:before {
-    @include starability-animation-base('icons-checkmark');
-    background-position: 0 (-2*$star-size);
+    @include starability-animation-base();
+    background-image: $img-checkmark;
     right: -$star-size;
+
+    @media screen and (min-resolution: 192dpi) {
+      background-image: $img-checkmark-2x;
+      background-size: $star-size auto;
+    }
   }
 
   > input:checked + label:before {

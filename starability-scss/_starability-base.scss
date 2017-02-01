@@ -1,6 +1,6 @@
 @import 'variables';
 
-@mixin starability-base($bg-image-path: 'icons') {
+@mixin starability-base() {
   display: block;
   position: relative;
   width: $star-count * $star-size;
@@ -39,27 +39,27 @@
     height: $star-size;
     color: transparent;
     cursor: pointer;
-    background-image: url('#{$image-directory-path}/#{$bg-image-path}.png');
+    background-image: $img-stars-sprite;
     background-repeat: no-repeat;
 
     @media screen and (min-resolution: 192dpi) {
-      background-image: url('#{$image-directory-path}/#{$bg-image-path}@2x.png');
+      background-image: $img-stars-sprite-2x;
       background-size: $star-size auto;
     }
   }
 }
 
-@mixin starability-animation-base($bg-image-path: 'icons') {
+@mixin starability-animation-base() {
   display: none;
   position: absolute;
   content: ' ';
   width: $star-size;
   height:  $star-size;
-  background-image: url('#{$image-directory-path}/#{$bg-image-path}.png');
+  background-image: $img-stars-sprite;
   background-repeat: no-repeat;
 
   @media screen and (min-resolution: 192dpi) {
-    background-image: url('#{$image-directory-path}/#{$bg-image-path}@2x.png');
+    background-image: $img-stars-sprite-2x;
     background-size: $star-size auto;
   }
 }
