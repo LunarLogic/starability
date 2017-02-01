@@ -1,6 +1,6 @@
 # Starability.css - Accessible rating with animations on top
 
-Accessible rating forms with cute animations on top. The name is the combination of two words: star and accessibility (or ability in general, whatever pleases you). Starability ratings are made with HTML, CSS and images (no JavaScript), and are accessible by keyboard, so even people using screen readers are able to use them. To achieve this effect I am using the sibling combinators technique that was introduced by [Lea Verou](http://lea.verou.me) in ["Accessible star rating widget with pure CSS" blogpost](http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/). The goal of this small library was to combine this technique with neat animations and make it easy to quickly use it on your website.
+Accessible rating forms with cute animations on top. The name is the combination of two words: star and accessibility (or ability in general, whatever pleases you). Starability ratings are made with HTML, CSS (no JavaScript), and are accessible by keyboard, so even people using screen readers are able to use them. To achieve this effect I am using the sibling combinators technique that was introduced by [Lea Verou](http://lea.verou.me) in ["Accessible star rating widget with pure CSS" blogpost](http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/). The goal of this small library was to combine this technique with neat animations and make it easy to quickly use it on your website.
 
 **Remember:** to submit the data you will need to add a bit of your own code. Here we have just a fieldset with a collection of radio buttons, neatly styled.
 
@@ -15,11 +15,6 @@ Accessible rating forms with cute animations on top. The name is the combination
 * index.html
 * /css
   * css file with chosen rating (eg.: starability-fade.min.css)
-* /starability-images
-  * icons.png
-  * icons@2x.png
-  * icons-checkmark.png *(include this file if you are going to use checkmark rating)*
-  * icons-checkmar@2x.png *(include this file if you are going to use checkmark rating)*
 
 If you have a different file structure, remember to update file paths for icons (in CSS files) and CSS stylesheet links (in HTML `<head>`).
 
@@ -81,9 +76,6 @@ If you have a different file structure, remember to update file paths for icons 
     ```html
     <fieldset class="starability-fade">
     ```
-
-
-4. Include the icon files in your images directory. CSS files use a relative path, `../images/icons.png`. You might want to change that if your file structure looks different from one proposed at the top.
 
 ## List of rating animations
 

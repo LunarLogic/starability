@@ -2,9 +2,9 @@
 All changes will be listed here (since version v.0.1.0)
 Project uses [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
-### Added
-- npm and Bower setup.
+## [1.1.0] - 2017-02-01
+### Changed
+- Remove external images, store images using base64 encoding.
 
 ## [0.1.0] - 2016-05-19
 ### Added
