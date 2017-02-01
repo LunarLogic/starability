@@ -16,7 +16,7 @@ Accessible rating forms with cute animations on top. The name is the combination
 * /css
   * css file with chosen rating (eg.: starability-fade.min.css)
 
-If you have a different file structure, remember to update file paths for icons (in CSS files) and CSS stylesheet links (in HTML `<head>`).
+If you have a different file structure, remember to update file path for CSS stylesheet links (in HTML `<head>`).
 
 ## How to use
 
