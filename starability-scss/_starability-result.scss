@@ -1,0 +1,27 @@
+.starability-result {
+  position: relative;
+  width: $star-count * $star-size;
+  height: $star-size;
+  background-image: $img-stars-sprite;
+  font-size: 0.1em;
+  color: transparent;
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    height: $star-size;
+    background-image: $img-stars-sprite;
+    background-position: 0 (-$star-size);
+  }
+
+  @while $star-count > 0 {
+    $star-number: $star-count;
+
+    &[data-rating="#{$star-number}"]:after {
+      width: $star-number * $star-size;
+    }
+
+    $star-count: $star-count - 1;
+  }
+}

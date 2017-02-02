@@ -96,10 +96,21 @@ Starability.css works in IE10+ and all modern browsers. If you want to support b
 
 This rating system by default reacts to `:hover`, changing the background image position. This is an operation that causes repaints. If you want to make your website as light as possible, you can remove declaration that will highlight stars on hover:
 
-```html
+```css
 .starability-fade > input:hover ~ label {
   background-position: 0 -30px;
 }
+```
+
+## Showing the static rating result
+
+You can add the static results of the rating anywhere you need it. To indicate how many stars were added, change the `data-rating` value on an element with the `starability-result` class. Please note, that this supports only integer numbers. If you wish to show the results as the float numbers, you might need to use other solution.
+
+```html
+  <p id="rated-element">Rated element name</p>
+  <div class="starability-result" data-rating="3" aria-describedby="rated-element">
+    3 stars
+  </div>
 ```
 
 ## Further customisation with SASS

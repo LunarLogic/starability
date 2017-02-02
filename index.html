@@ -8,25 +8,34 @@
 </head>
 
 <body>
+  <h1>Starability.css example</h1>
+  <h2>Rating example</h2>
   <form>
-    <fieldset class="starability-fade"> <!-- Change starability-basic to different class to see animations. !-->
+    <!-- Change starability-basic to different class to see animations. -->
+    <fieldset class="starability-basic">
       <legend>Basic star rating:</legend>
 
       <input type="radio" id="rate5" name="rating" value="5" />
-      <label for="rate5" title="Amazing">5 stars, amazing.</label>
+      <label for="rate5">5 stars, amazing.</label>
 
       <input type="radio" id="rate4" name="rating" value="4" />
-      <label for="rate4" title="Very good">4 stars, very good.</label>
+      <label for="rate4">4 stars, very good.</label>
 
       <input type="radio" id="rate3" name="rating" value="3" />
-      <label for="rate3" title="Average">3 stars, average.</label>
+      <label for="rate3">3 stars, average.</label>
 
       <input type="radio" id="rate2" name="rating" value="2" />
-      <label for="rate2" title="Not good">2 stars, not good.</label>
+      <label for="rate2">2 stars, not good.</label>
 
       <input type="radio" id="rate1" name="rating" value="1" />
-      <label for="rate1" title="Terrible">1 star, terrible.</label>
+      <label for="rate1">1 star, terrible.</label>
     </fieldset>
   </form>
+  <h2>Static result example</h2>
+  <!-- The result is based on the 'data-rating' value. Change the value to see the different static rating. -->
+  <p id="result1">Movie name</p>
+  <div class="starability-result" data-rating="3" aria-describedby="result1">
+    3 stars
+  </div>
 </body>
 </html>
