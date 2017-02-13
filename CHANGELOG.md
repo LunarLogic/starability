@@ -2,6 +2,11 @@
 All changes will be listed here (since version v.0.1.0)
 Project uses [Semantic Versioning](http://semver.org/).
 
+## [1.3.0] - 2017-02-14
+### Added
+- Add heartbeat animation.
+- Add heart animation.
+
 ## [1.2.0] - 2017-02-02
 ### Added
 - Add an example of showing the static rating with the corresponding 'starability-result' class.

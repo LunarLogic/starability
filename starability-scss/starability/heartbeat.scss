@@ -1,0 +1,56 @@
+@import '../variables';
+@import '../starability-base';
+@import '../starability-result';
+
+@keyframes heartbeat {
+
+  0% {
+    transform: translateY(.5 * $star-size);
+  }
+
+  30% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  45% {
+    transform: translateY(0);
+    transform: scale(0.8, 0.8);
+  }
+
+  50% {
+    transform: scale(0.7, 0.7);
+  }
+
+  75% {
+    opacity: .9;
+  }
+
+  100% {
+    transform: scale(1.25, 1.25);
+    opacity: 0;
+  }
+}
+
+.starability-heartbeat {
+  @include starability-base;
+
+  > label:before {
+    @include starability-animation-base;
+    background-image: $img-heart;
+    bottom: $star-size;
+
+    @media screen and (min-resolution: 192dpi) {
+      background-image: $img-heart-2x;
+      background-size: $star-size auto;
+    }
+  }
+
+  > input:checked + label:before {
+    display: block;
+    animation-name: heartbeat;
+    animation-timing-function: cubic-bezier(.19,1,.69,1.35);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}

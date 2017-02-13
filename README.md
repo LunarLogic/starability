@@ -87,6 +87,8 @@ For now you can choose one of the animations listed below. Go to the [demo](http
   - starability-growRotate
   - starability-fade
   - starability-checkmark
+  - starability-heart
+  - starability-heartbeat
 
 ## Supported browsers
 
