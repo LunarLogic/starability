@@ -36,14 +36,8 @@
   @include starability-base;
 
   > label:before {
-    @include starability-animation-base;
-    background-image: $img-heart;
+    @include starability-animation-base($img-heart, $img-heart-2x);
     bottom: $star-size;
-
-    @media screen and (min-resolution: 192dpi) {
-      background-image: $img-heart-2x;
-      background-size: $star-size auto;
-    }
   }
 
   > input:checked + label:before {
