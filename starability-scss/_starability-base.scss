@@ -1,4 +1,6 @@
-@mixin starability-base($bg-image-path: 'icons') {
+@import 'variables';
+
+@mixin starability-base() {
   display: block;
   position: relative;
   width: $star-count * $star-size;
@@ -35,29 +37,30 @@
     float: right;
     width: $star-size;
     height: $star-size;
+    font-size: 0.1em;
     color: transparent;
     cursor: pointer;
-    background-image: url('../images/#{$bg-image-path}.png');
+    background-image: $img-stars-sprite;
     background-repeat: no-repeat;
 
-    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url('../images/#{$bg-image-path}@2x.png');
+    @media screen and (min-resolution: 192dpi) {
+      background-image: $img-stars-sprite-2x;
       background-size: $star-size auto;
     }
   }
 }
 
-@mixin starability-animation-base($bg-image-path: 'icons') {
+@mixin starability-animation-base() {
   display: none;
   position: absolute;
   content: ' ';
   width: $star-size;
   height:  $star-size;
-  background-image: url('../images/#{$bg-image-path}.png');
+  background-image: $img-stars-sprite;
   background-repeat: no-repeat;
 
-  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url('../images/#{$bg-image-path}@2x.png');
+  @media screen and (min-resolution: 192dpi) {
+    background-image: $img-stars-sprite-2x;
     background-size: $star-size auto;
   }
 }

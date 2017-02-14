@@ -1,0 +1,54 @@
+@import '../variables';
+@import '../starability-base';
+
+@keyframes heart {
+
+  0% {
+    transform: translateY(.5*$star-size);
+  }
+
+  30% {
+    transform: translateY(0);
+    opacity: .7;
+  }
+
+  45% {
+    transform: translateY(0);
+    transform: scale(1.1, 1.1);
+  }
+
+  50% {
+    transform: scale(0.9, 0.9);
+  }
+
+  80% {
+    opacity: .9;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.starability-heart {
+  @include starability-base;
+
+  > label:before {
+    @include starability-animation-base;
+    transform: scale(0, 0);
+    background-image: $img-heart;
+    bottom: $star-size;
+
+    @media screen and (min-resolution: 192dpi) {
+      background-image: $img-heart-2x;
+      background-size: $star-size auto;
+    }
+  }
+
+  > input:checked + label:before {
+    display: block;
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
