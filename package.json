@@ -1,6 +1,6 @@
 {
   "name": "starability",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "Starability.css is an accessible rating system with cute animations on top. No JavaScript included.",
   "main": "./starability-css/starability-all.css",
   "author": "Anna Migas <amjmigas@gmail.com>",

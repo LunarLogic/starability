@@ -34,14 +34,9 @@
   }
 
   > label:before {
-    @include starability-animation-base();
+    @include starability-animation-base($img-checkmark, $img-checkmark-2x);
     background-image: $img-checkmark;
     right: -$star-size;
-
-    @media screen and (min-resolution: 192dpi) {
-      background-image: $img-checkmark-2x;
-      background-size: $star-size auto;
-    }
   }
 
   > input:checked + label:before {

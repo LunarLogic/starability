@@ -2,6 +2,10 @@
 All changes will be listed here (since version v.0.1.0)
 Project uses [Semantic Versioning](http://semver.org/).
 
+## [1.3.2] - 2017-02-14
+### Changed
+- Add image variable name as a parameter in starability-animation-base mixin.
+
 ## [1.3.0] - 2017-02-14
 ### Added
 - Add heartbeat animation.
