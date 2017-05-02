@@ -42,6 +42,7 @@
     cursor: pointer;
     background-image: $img-stars-sprite;
     background-repeat: no-repeat;
+    outline: 0 !important;
 
     @media screen and (min-resolution: 192dpi) {
       background-image: $img-stars-sprite-2x;
