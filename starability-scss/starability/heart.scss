@@ -33,19 +33,13 @@
 .starability-heart {
   @include starability-base;
 
-  > label:before {
-    @include starability-animation-base;
+  > label::after {
+    @include starability-animation-base($img-heart, $img-heart-2x);
     transform: scale(0, 0);
-    background-image: $img-heart;
     bottom: $star-size;
-
-    @media screen and (min-resolution: 192dpi) {
-      background-image: $img-heart-2x;
-      background-size: $star-size auto;
-    }
   }
 
-  > input:checked + label:before {
+  > input:checked + label::after {
     display: block;
     animation-name: heart;
     animation-duration: 1s;

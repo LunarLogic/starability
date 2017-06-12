@@ -28,23 +28,29 @@
   @include starability-base();
 
   > label {
-    position: static;
     z-index: 2;
   }
 
-  > label:before {
-    @include starability-animation-base();
+  > label::after {
+    @include starability-animation-base($img-checkmark, $img-checkmark-2x);
     background-image: $img-checkmark;
-    right: -$star-size;
-
-    @media screen and (min-resolution: 192dpi) {
-      background-image: $img-checkmark-2x;
-      background-size: $star-size auto;
-    }
   }
 
-  > input:checked + label:before {
-    display: block;
+  $star-count-checkmark: $star-count;
+
+  @while $star-count-checkmark > 0 {
+    $star-number: $star-count-checkmark;
+    $distance: ($star-count + 1) - $star-count-checkmark;
+
+    > label:nth-of-type(#{$star-number})::after {
+      right: -($distance * $star-size) - 0.5 * $star-size;
+    }
+
+    $star-count-checkmark: $star-count-checkmark - 1;
+  }
+
+  > input:checked + label::after {
+    display: inline-block;
     animation-name: checkmark;
     animation-duration: .7s;
     animation-fill-mode: forwards;

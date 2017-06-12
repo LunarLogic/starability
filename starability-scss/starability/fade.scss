@@ -20,13 +20,13 @@
 .starability-fade {
   @include starability-base;
 
-  > label:before {
+  > label::after {
     @include starability-animation-base;
     background-position: 0 (-$star-size);
     bottom: $star-size;
   }
 
-  > input:checked + label:before {
+  > input:checked + label::after {
     display: block;
     animation-name: fade;
     animation-duration: 1s;
