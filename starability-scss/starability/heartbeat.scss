@@ -35,12 +35,12 @@
 .starability-heartbeat {
   @include starability-base;
 
-  > label:before {
+  > label::after {
     @include starability-animation-base($img-heart, $img-heart-2x);
     bottom: $star-size;
   }
 
-  > input:checked + label:before {
+  > input:checked + label::after {
     display: block;
     animation-name: heartbeat;
     animation-timing-function: cubic-bezier(.19,1,.69,1.35);

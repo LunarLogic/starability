@@ -16,12 +16,25 @@
 
   > input:checked ~ label,
   > input:focus ~ label {
-    background-position: 0 (-$star-size);
+    background-position: 0 0;
+  }
+
+  > input:checked + label,
+  > input:focus + label {
+    background-position: 0 -30px;
   }
 
   @if ($hover-enabled) {
     > input:hover ~ label {
-      background-position: 0 (-$star-size);
+      background-position: 0 0;
+    }
+
+    > input:hover + label {
+      background-position: 0 -30px;
+    }
+
+    > input:hover + label::before {
+      opacity: 1;
     }
   }
 
@@ -34,7 +47,7 @@
   > label {
     position: relative;
     display: inline-block;
-    float: right;
+    float: left;
     width: $star-size;
     height: $star-size;
     font-size: 0.1em;
@@ -42,6 +55,35 @@
     cursor: pointer;
     background-image: $img-stars-sprite;
     background-repeat: no-repeat;
+    background-position: 0 (-$star-size);
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 30px;
+      background-image: $img-stars-sprite;
+      background-position: 0 30px;
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    @if ($hover-enabled) {
+
+      // This function makes sure the right number of stars is highlighted
+      $star-count-highlight: $star-count;
+
+      @while $star-count-highlight > 0 {
+        $star-number: $star-count-highlight;
+
+        &:nth-of-type(#{$star-number})::before {
+          width: $star-number * $star-size - $star-size;
+          left: -($star-number * $star-size - $star-size);
+        }
+
+        $star-count-highlight: $star-count-highlight - 1;
+      }
+    }
 
     @media screen and (min-resolution: 192dpi) {
       background-image: $img-stars-sprite-2x;
@@ -51,9 +93,9 @@
 }
 
 @mixin starability-animation-base($img-animated: $img-stars-sprite, $img-animated-2x: $img-stars-sprite-2x) {
-  display: none;
-  position: absolute;
   content: ' ';
+  position: absolute;
+  display: none;
   width: $star-size;
   height:  $star-size;
   background-image: $img-animated;

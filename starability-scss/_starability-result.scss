@@ -15,13 +15,15 @@
     background-position: 0 (-$star-size);
   }
 
-  @while $star-count > 0 {
-    $star-number: $star-count;
+  $star-count-result: $star-count;
 
-    &[data-rating="#{$star-number}"]:after {
+  @while $star-count-result > 0 {
+    $star-number: $star-count-result;
+
+    &[data-rating="#{$star-number}"]::after {
       width: $star-number * $star-size;
     }
 
-    $star-count: $star-count - 1;
+    $star-count-result: $star-count-result - 1;
   }
 }

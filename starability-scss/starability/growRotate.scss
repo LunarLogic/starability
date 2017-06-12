@@ -22,12 +22,12 @@
 .starability-growRotate {
   @include starability-base;
 
-  > label:before {
+  > label::after {
     @include starability-animation-base;
     bottom: 0;
   }
 
-  > input:checked + label:before {
+  > input:checked + label::after {
     background-position: 0 (-$star-size);
     display: block;
     animation-duration: 1s;
