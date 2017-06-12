@@ -1,8 +1,10 @@
 # Starability.css - Accessible rating with animations on top
 
-Accessible rating forms with cute animations on top. The name is the combination of two words: star and accessibility (or ability in general, whatever pleases you). Starability ratings are made with HTML, CSS (no JavaScript), and are accessible by keyboard, so even people using screen readers are able to use them. To achieve this effect I am using the sibling combinators technique that was introduced by [Lea Verou](http://lea.verou.me) in ["Accessible star rating widget with pure CSS" blogpost](http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/). The goal of this small library was to combine this technique with neat animations and make it easy to quickly use it on your website.
+Accessible rating forms with cute animations on top. The name is the combination of two words: star and accessibility (or ability in general, whatever pleases you). Starability ratings are made with HTML, CSS (no JavaScript), and are accessible by keyboard, so even people using screen readers are able to use them. To achieve this effect I am using the sibling combinators technique that was introduced by [Lea Verou](http://lea.verou.me) in ["Accessible star rating widget with pure CSS" blogpost](http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/), but it is bit upgraded: does not rely on a reverse order of the inputs, what makes it even more accessible. The goal of this small library was to combine the Lea's technique with neat animations and make it easy to quickly use it on your website.
 
 **Remember:** to submit the data you will need to add a bit of your own code. Here we have just a fieldset with a collection of radio buttons, neatly styled.
+
+**Important:** The library does not rely on a reverse order of inputs any more. This means that the issue with the keyboard arrows moving in a reverse direction is no longer there. It is strongly advised to update the HTML structure in your project, although the updated CSS doesn't break the functionality even for [the previous version of HTML markup](https://github.com/LunarLogic/starability/blob/f3b34818d6b704465278f69dde506c78a6a6f444/README.md#how-to-use).
 
 ## Demo
 
@@ -26,30 +28,30 @@ If you have a different file structure, remember to update file path for CSS sty
 
     <fieldset class="starability-basic">
       <legend>First rating:</legend>
-      <input type="radio" id="first-rate5" name="rating" value="5" />
-      <label for="first-rate5" title="Amazing">5 stars</label>
-      <input type="radio" id="first-rate4" name="rating" value="4" />
-      <label for="first-rate4" title="Very good">4 stars</label>
-      <input type="radio" id="first-rate3" name="rating" value="3" />
-      <label for="first-rate3" title="Average">3 stars</label>
-      <input type="radio" id="first-rate2" name="rating" value="2" />
-      <label for="first-rate2" title="Not good">2 stars</label>
       <input type="radio" id="first-rate1" name="rating" value="1" />
       <label for="first-rate1" title="Terrible">1 star</label>
+      <input type="radio" id="first-rate2" name="rating" value="2" />
+      <label for="first-rate2" title="Not good">2 stars</label>
+      <input type="radio" id="first-rate3" name="rating" value="3" />
+      <label for="first-rate3" title="Average">3 stars</label>
+      <input type="radio" id="first-rate4" name="rating" value="4" />
+      <label for="first-rate4" title="Very good">4 stars</label>
+      <input type="radio" id="first-rate5" name="rating" value="5" />
+      <label for="first-rate5" title="Amazing">5 stars</label>
     </fieldset>
 
     <fieldset class="starability-basic">
-      <legend>Second rating:</legend>
-      <input type="radio" id="second-rate5" name="rating" value="5" />
-      <label for="second-rate5" title="Amazing">5 stars</label>
-      <input type="radio" id="second-rate4" name="rating" value="4" />
-      <label for="second-rate4" title="Very good">4 stars</label>
-      <input type="radio" id="second-rate3" name="rating" value="3" />
-      <label for="second-rate3" title="Average">3 stars</label>
-      <input type="radio" id="second-rate2" name="rating" value="2" />
-      <label for="second-rate2" title="Not good">2 stars</label>
+      <legend>First rating:</legend>
       <input type="radio" id="second-rate1" name="rating" value="1" />
       <label for="second-rate1" title="Terrible">1 star</label>
+      <input type="radio" id="second-rate2" name="rating" value="2" />
+      <label for="second-rate2" title="Not good">2 stars</label>
+      <input type="radio" id="second-rate3" name="rating" value="3" />
+      <label for="second-rate3" title="Average">3 stars</label>
+      <input type="radio" id="second-rate4" name="rating" value="4" />
+      <label for="second-rate4" title="Very good">4 stars</label>
+      <input type="radio" id="second-rate5" name="rating" value="5" />
+      <label for="second-rate5" title="Amazing">5 stars</label>
     </fieldset>
     ```
 
