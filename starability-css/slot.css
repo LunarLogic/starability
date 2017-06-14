@@ -35,10 +35,6 @@
   opacity: 1;
 }
 
-.starability-slot > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-slot > label {
   position: relative;
   display: inline-block;

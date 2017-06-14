@@ -48,10 +48,6 @@
   opacity: 1;
 }
 
-.starability-fade > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-fade > label {
   position: relative;
   display: inline-block;
