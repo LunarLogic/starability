@@ -73,10 +73,6 @@
   opacity: 1;
 }
 
-.starability-basic > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-basic > label {
   position: relative;
   display: inline-block;

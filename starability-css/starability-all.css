@@ -73,10 +73,6 @@
   opacity: 1;
 }
 
-.starability-basic > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-basic > label {
   position: relative;
   display: inline-block;
@@ -207,10 +203,6 @@
 
 .starability-slot > input:hover + label::before {
   opacity: 1;
-}
-
-.starability-slot > input:focus + label {
-  outline: 1px dotted #999;
 }
 
 .starability-slot > label {
@@ -363,10 +355,6 @@
 
 .starability-grow > input:hover + label::before {
   opacity: 1;
-}
-
-.starability-grow > input:focus + label {
-  outline: 1px dotted #999;
 }
 
 .starability-grow > label {
@@ -541,10 +529,6 @@
   opacity: 1;
 }
 
-.starability-growRotate > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-growRotate > label {
   position: relative;
   display: inline-block;
@@ -714,10 +698,6 @@
 
 .starability-fade > input:hover + label::before {
   opacity: 1;
-}
-
-.starability-fade > input:focus + label {
-  outline: 1px dotted #999;
 }
 
 .starability-fade > label {
@@ -894,10 +874,6 @@
 
 .starability-checkmark > input:hover + label::before {
   opacity: 1;
-}
-
-.starability-checkmark > input:focus + label {
-  outline: 1px dotted #999;
 }
 
 .starability-checkmark > label {
@@ -1104,10 +1080,6 @@
   opacity: 1;
 }
 
-.starability-heart > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-heart > label {
   position: relative;
   display: inline-block;
@@ -1288,10 +1260,6 @@
 
 .starability-heartbeat > input:hover + label::before {
   opacity: 1;
-}
-
-.starability-heartbeat > input:focus + label {
-  outline: 1px dotted #999;
 }
 
 .starability-heartbeat > label {

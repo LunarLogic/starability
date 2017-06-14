@@ -96,10 +96,6 @@
   opacity: 1;
 }
 
-.starability-heart > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-heart > label {
   position: relative;
   display: inline-block;
