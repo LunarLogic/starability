@@ -59,6 +59,10 @@
   border: none;
 }
 
+.starability-growRotate > .input-empty:checked ~ label {
+  background-position: 0 0;
+}
+
 .starability-growRotate > input {
   position: absolute;
   margin-right: -100%;

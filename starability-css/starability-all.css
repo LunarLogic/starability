@@ -45,6 +45,10 @@
   border: none;
 }
 
+.starability-basic > .input-empty:checked ~ label {
+  background-position: 0 0;
+}
+
 .starability-basic > input {
   position: absolute;
   margin-right: -100%;
@@ -175,6 +179,10 @@
   min-height: 60px;
   padding: 0;
   border: none;
+}
+
+.starability-slot > .input-empty:checked ~ label {
+  background-position: 0 0;
 }
 
 .starability-slot > input {
@@ -327,6 +335,10 @@
   min-height: 60px;
   padding: 0;
   border: none;
+}
+
+.starability-grow > .input-empty:checked ~ label {
+  background-position: 0 0;
 }
 
 .starability-grow > input {
@@ -501,6 +513,10 @@
   border: none;
 }
 
+.starability-growRotate > .input-empty:checked ~ label {
+  background-position: 0 0;
+}
+
 .starability-growRotate > input {
   position: absolute;
   margin-right: -100%;
@@ -670,6 +686,10 @@
   min-height: 60px;
   padding: 0;
   border: none;
+}
+
+.starability-fade > .input-empty:checked ~ label {
+  background-position: 0 0;
 }
 
 .starability-fade > input {
@@ -846,6 +866,10 @@
   min-height: 60px;
   padding: 0;
   border: none;
+}
+
+.starability-checkmark > .input-empty:checked ~ label {
+  background-position: 0 0;
 }
 
 .starability-checkmark > input {
@@ -1052,6 +1076,10 @@
   border: none;
 }
 
+.starability-heart > .input-empty:checked ~ label {
+  background-position: 0 0;
+}
+
 .starability-heart > input {
   position: absolute;
   margin-right: -100%;
@@ -1232,6 +1260,10 @@
   min-height: 60px;
   padding: 0;
   border: none;
+}
+
+.starability-heartbeat > .input-empty:checked ~ label {
+  background-position: 0 0;
 }
 
 .starability-heartbeat > input {

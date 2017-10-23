@@ -68,6 +68,10 @@
   border: none;
 }
 
+.starability-heart > .input-empty:checked ~ label {
+  background-position: 0 0;
+}
+
 .starability-heart > input {
   position: absolute;
   margin-right: -100%;

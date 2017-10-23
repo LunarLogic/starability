@@ -59,6 +59,10 @@
   border: none;
 }
 
+.starability-grow > .input-empty:checked ~ label {
+  background-position: 0 0;
+}
+
 .starability-grow > input {
   position: absolute;
   margin-right: -100%;

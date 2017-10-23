@@ -63,6 +63,10 @@
   border: none;
 }
 
+.starability-checkmark > .input-empty:checked ~ label {
+  background-position: 0 0;
+}
+
 .starability-checkmark > input {
   position: absolute;
   margin-right: -100%;

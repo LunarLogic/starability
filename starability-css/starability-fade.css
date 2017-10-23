@@ -58,6 +58,10 @@
   border: none;
 }
 
+.starability-fade > .input-empty:checked ~ label {
+  background-position: 0 0;
+}
+
 .starability-fade > input {
   position: absolute;
   margin-right: -100%;

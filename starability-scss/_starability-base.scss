@@ -21,7 +21,7 @@
 
   > input:checked + label,
   > input:focus + label {
-    background-position: 0 -30px;
+    background-position: 0 (-$star-size);
   }
 
   @if ($hover-enabled) {
@@ -30,7 +30,7 @@
     }
 
     > input:hover + label {
-      background-position: 0 -30px;
+      background-position: 0 (-$star-size);
     }
 
     > input:hover + label::before {
@@ -61,9 +61,9 @@
       content: '';
       position: absolute;
       display: block;
-      height: 30px;
+      height: $star-size;
       background-image: $img-stars-sprite;
-      background-position: 0 30px;
+      background-position: 0 $star-size;
       pointer-events: none;
       opacity: 0;
     }

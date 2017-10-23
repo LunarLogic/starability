@@ -45,6 +45,10 @@
   border: none;
 }
 
+.starability-basic > .input-empty:checked ~ label {
+  background-position: 0 0;
+}
+
 .starability-basic > input {
   position: absolute;
   margin-right: -100%;
