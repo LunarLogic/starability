@@ -28,6 +28,7 @@ If you have a different file structure, remember to update file path for CSS sty
 
     <fieldset class="starability-basic">
       <legend>First rating:</legend>
+      <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
       <input type="radio" id="first-rate1" name="rating" value="1" />
       <label for="first-rate1" title="Terrible">1 star</label>
       <input type="radio" id="first-rate2" name="rating" value="2" />
@@ -42,6 +43,7 @@ If you have a different file structure, remember to update file path for CSS sty
 
     <fieldset class="starability-basic">
       <legend>First rating:</legend>
+      <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
       <input type="radio" id="second-rate1" name="rating" value="1" />
       <label for="second-rate1" title="Terrible">1 star</label>
       <input type="radio" id="second-rate2" name="rating" value="2" />
@@ -54,7 +56,6 @@ If you have a different file structure, remember to update file path for CSS sty
       <label for="second-rate5" title="Amazing">5 stars</label>
     </fieldset>
     ```
-
 
 2. Add a stylesheet with a name of an animation that works best for your app name inside your website's <head> element. There are [the minified versions](https://github.com/LunarLogic/starability/tree/master/starability-minified) or [standard CSS files](https://github.com/LunarLogic/starability/tree/master/starability-css). Let's say we want a fading animation:
 
