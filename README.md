@@ -1,6 +1,6 @@
 # Starability.css - Accessible rating with animations on top
 
-[[https://github.com/LunarLogic/starability/blob/master/gh-images/starability-showcase.gif]]
+![](https://raw.githubusercontent.com/LunarLogic/starability/master/gh-images/starability-showcase.gif)
 
 Accessible rating forms with cute animations on top. The name is the combination of two words: star and accessibility (or ability in general, whatever pleases you). Starability ratings are made with HTML, CSS (no JavaScript), and are accessible by keyboard, so even people using screen readers are able to use them. To achieve this effect I am using the sibling combinators technique that was introduced by [Lea Verou](http://lea.verou.me) in ["Accessible star rating widget with pure CSS" blogpost](http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/), but it is bit upgraded: does not rely on a reverse order of the inputs, what makes it even more accessible. The goal of this small library was to combine the Lea's technique with neat animations and make it easy to quickly use it on your website.
 
@@ -113,11 +113,11 @@ This rating system by default reacts to `:hover`, changing the background image 
 
 By default, if user focuses with keyboard on the rating widget, there is an outline around all the stars to make it easier to navigate. This is not visible for users using only mouse. The function can be turned off by setting the `$accessible-focus-ring` variable to `false` in [_variables.scss file](https://github.com/LunarLogic/starability/blob/master/starability-scss/_variables.scss) and removing a span with `.starability-focus-ring` class from the HTML. It is not advised though to remove the outline.
 
-[[https://github.com/LunarLogic/starability/blob/master/gh-images/starability-focus-ring.png]]
+![](https://raw.githubusercontent.com/LunarLogic/starability/master/gh-images/starability-focus-ring.png)
 
 There is also another functionality that can be turned on by changing the `$accessible-outline` variable value to `true`. It will show an outline around active stars that are in the keyboard focus. It can enhance the widget's accessibility for some users.
 
-[[https://github.com/LunarLogic/starability/blob/master/gh-images/starability-accessibility-outline.png]]
+![](https://raw.githubusercontent.com/LunarLogic/starability/master/gh-images/starability-accessibility-outline.png)
 
 ## Showing the static rating result
 
