@@ -112,7 +112,7 @@ This rating system by default reacts to `:hover`, changing the background image 
 You can add the static results of the rating anywhere you need it. To indicate how many stars were added, change the `data-rating` value on an element with the `starability-result` class. Please note, that this supports only integer numbers. If you wish to show the results as the float numbers, you might need to use other solution.
 
 ```html
-  <p>Rated element name</p>
+  <h3>Rated element name</h3>
   <p class="starability-result" data-rating="3">
     Rated: 3 stars
   </p>
