@@ -44,6 +44,22 @@
     }
   }
 
+  @if ($accessible-focus-ring) {
+    .starability-focus-ring {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $star-size;
+      outline: 2px dotted #999;
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    > #no-rate:focus ~ .starability-focus-ring {
+      opacity: 1;
+    }
+  }
+
   > label {
     position: relative;
     display: inline-block;

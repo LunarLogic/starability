@@ -1,6 +1,6 @@
 {
   "name": "starability",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "homepage": "https://github.com/LunarLogic/starability",
   "authors": [
     "Anna Migas <amjmigas@gmail.com>"
@@ -25,6 +25,7 @@
     "node_modules",
     "bower_components",
     "/demo",
+    "/gh-images",
     "gulpfile.js",
     "package.json"
   ]

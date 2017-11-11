@@ -45,10 +45,6 @@
   border: none;
 }
 
-.starability-basic > .input-empty:checked ~ label {
-  background-position: 0 0;
-}
-
 .starability-basic > input {
   position: absolute;
   margin-right: -100%;
@@ -74,6 +70,24 @@
 }
 
 .starability-basic > input:hover + label::before {
+  opacity: 1;
+}
+
+.starability-basic > input:focus + label {
+  outline: 1px dotted #999;
+}
+
+.starability-basic .starability-focus-ring {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  outline: 2px dotted #999;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.starability-basic > #no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 
