@@ -59,7 +59,7 @@ If you have a different file structure, remember to update file path for CSS sty
     </fieldset>
     ```
 
-2. Add a stylesheet with a name of an animation that works best for your app name inside your website's <head> element. There are [the minified versions](https://github.com/LunarLogic/starability/tree/master/starability-minified) or [standard CSS files](https://github.com/LunarLogic/starability/tree/master/starability-css). Let's say we want a fading animation:
+2. Add a stylesheet with a name of an animation that works best for your app name inside your website's `<head>` element. There are [the minified versions](https://github.com/LunarLogic/starability/tree/master/starability-minified) or [standard CSS files](https://github.com/LunarLogic/starability/tree/master/starability-css). Let's say we want a fading animation:
 
     ```html
     <head>
@@ -124,10 +124,10 @@ There is also another functionality that can be turned on by changing the `$acce
 You can add the static results of the rating anywhere you need it. To indicate how many stars were added, change the `data-rating` value on an element with the `starability-result` class. Please note, that this supports only integer numbers. If you wish to show the results as the float numbers, you might need to use other solution.
 
 ```html
-  <p id="rated-element">Rated element name</p>
-  <div class="starability-result" data-rating="3" aria-describedby="rated-element">
-    3 stars
-  </div>
+  <h3>Rated element name</h3>
+  <p class="starability-result" data-rating="3">
+    Rated: 3 stars
+  </p>
 ```
 
 ## Further customisation with SASS
