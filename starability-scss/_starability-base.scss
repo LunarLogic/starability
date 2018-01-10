@@ -21,7 +21,7 @@
 
   > input:checked + label,
   > input:focus + label {
-    background-position: 0 -30px;
+    background-position: 0 (-$star-size);
   }
 
   @if ($hover-enabled) {
@@ -30,7 +30,7 @@
     }
 
     > input:hover + label {
-      background-position: 0 -30px;
+      background-position: 0 (-$star-size);
     }
 
     > input:hover + label::before {
@@ -41,6 +41,22 @@
   @if ($accessible-highlight) {
     > input:focus + label {
       outline: 1px dotted #999;
+    }
+  }
+
+  @if ($accessible-focus-ring) {
+    .starability-focus-ring {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $star-size;
+      outline: 2px dotted #999;
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    > #no-rate:focus ~ .starability-focus-ring {
+      opacity: 1;
     }
   }
 
@@ -61,9 +77,9 @@
       content: '';
       position: absolute;
       display: block;
-      height: 30px;
+      height: $star-size;
       background-image: $img-stars-sprite;
-      background-position: 0 30px;
+      background-position: 0 $star-size;
       pointer-events: none;
       opacity: 0;
     }
@@ -95,7 +111,7 @@
 @mixin starability-animation-base($img-animated: $img-stars-sprite, $img-animated-2x: $img-stars-sprite-2x) {
   content: ' ';
   position: absolute;
-  display: none;
+  opacity: 0;
   width: $star-size;
   height:  $star-size;
   background-image: $img-animated;

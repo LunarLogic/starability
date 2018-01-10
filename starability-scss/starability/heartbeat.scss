@@ -1,10 +1,11 @@
 @import '../variables';
 @import '../starability-base';
+@import '../starability-result';
 
 @keyframes heartbeat {
 
   0% {
-    transform: translateY(.5 * $star-size);
+    transform: translateY(0.5 * $star-size);
   }
 
   30% {
@@ -22,7 +23,7 @@
   }
 
   75% {
-    opacity: .9;
+    opacity: 0.9;
   }
 
   100% {
@@ -33,14 +34,17 @@
 
 .starability-heartbeat {
   @include starability-base;
+  will-change: contents;
 
   > label::after {
     @include starability-animation-base($img-heart, $img-heart-2x);
     bottom: $star-size;
+    left: 0;
+    z-index: 2;
   }
 
   > input:checked + label::after {
-    display: block;
+    opacity: 1;
     animation-name: heartbeat;
     animation-timing-function: cubic-bezier(.19,1,.69,1.35);
     animation-duration: 1s;

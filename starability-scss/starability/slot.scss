@@ -1,5 +1,6 @@
 @import '../variables';
 @import '../starability-base';
+@import '../starability-result';
 
 .starability-slot {
   @include starability-base;
