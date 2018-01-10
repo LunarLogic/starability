@@ -221,10 +221,6 @@ footer {
   opacity: 1;
 }
 
-.starability-basic > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-basic .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -235,7 +231,7 @@ footer {
   opacity: 0;
 }
 
-.starability-basic > #no-rate:focus ~ .starability-focus-ring {
+.starability-basic > .input-no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 
@@ -371,10 +367,6 @@ footer {
   opacity: 1;
 }
 
-.starability-slot > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-slot .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -385,7 +377,7 @@ footer {
   opacity: 0;
 }
 
-.starability-slot > #no-rate:focus ~ .starability-focus-ring {
+.starability-slot > .input-no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 
@@ -563,10 +555,6 @@ footer {
   opacity: 1;
 }
 
-.starability-grow > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-grow .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -577,7 +565,7 @@ footer {
   opacity: 0;
 }
 
-.starability-grow > #no-rate:focus ~ .starability-focus-ring {
+.starability-grow > .input-no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 
@@ -778,10 +766,6 @@ footer {
   opacity: 1;
 }
 
-.starability-growRotate > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-growRotate .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -792,7 +776,7 @@ footer {
   opacity: 0;
 }
 
-.starability-growRotate > #no-rate:focus ~ .starability-focus-ring {
+.starability-growRotate > .input-no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 
@@ -989,10 +973,6 @@ footer {
   opacity: 1;
 }
 
-.starability-fade > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-fade .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -1003,7 +983,7 @@ footer {
   opacity: 0;
 }
 
-.starability-fade > #no-rate:focus ~ .starability-focus-ring {
+.starability-fade > .input-no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 
@@ -1209,10 +1189,6 @@ footer {
   opacity: 1;
 }
 
-.starability-checkmark > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-checkmark .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -1223,7 +1199,7 @@ footer {
   opacity: 0;
 }
 
-.starability-checkmark > #no-rate:focus ~ .starability-focus-ring {
+.starability-checkmark > .input-no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 
@@ -1474,10 +1450,6 @@ footer {
   opacity: 1;
 }
 
-.starability-heart > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-heart .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -1488,7 +1460,7 @@ footer {
   opacity: 0;
 }
 
-.starability-heart > #no-rate:focus ~ .starability-focus-ring {
+.starability-heart > .input-no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 
@@ -1715,10 +1687,6 @@ footer {
   opacity: 1;
 }
 
-.starability-heartbeat > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-heartbeat .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -1729,7 +1697,7 @@ footer {
   opacity: 0;
 }
 
-.starability-heartbeat > #no-rate:focus ~ .starability-focus-ring {
+.starability-heartbeat > .input-no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 

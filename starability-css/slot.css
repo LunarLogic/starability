@@ -73,10 +73,6 @@
   opacity: 1;
 }
 
-.starability-slot > input:focus + label {
-  outline: 1px dotted #999;
-}
-
 .starability-slot .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -87,7 +83,7 @@
   opacity: 0;
 }
 
-.starability-slot > #no-rate:focus ~ .starability-focus-ring {
+.starability-slot > .input-no-rate:focus ~ .starability-focus-ring {
   opacity: 1;
 }
 

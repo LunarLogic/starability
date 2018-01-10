@@ -55,7 +55,7 @@
       opacity: 0;
     }
 
-    > #no-rate:focus ~ .starability-focus-ring {
+    > .input-no-rate:focus ~ .starability-focus-ring {
       opacity: 1;
     }
   }
