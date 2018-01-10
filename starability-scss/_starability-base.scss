@@ -111,7 +111,7 @@
 @mixin starability-animation-base($img-animated: $img-stars-sprite, $img-animated-2x: $img-stars-sprite-2x) {
   content: ' ';
   position: absolute;
-  display: none;
+  opacity: 0;
   width: $star-size;
   height:  $star-size;
   background-image: $img-animated;

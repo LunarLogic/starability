@@ -21,15 +21,17 @@
 
 .starability-grow {
   @include starability-base;
+  will-change: contents;
 
   > label::after {
     @include starability-animation-base;
     bottom: 0;
+    left: 0;
   }
 
   > input:checked + label::after {
     background-position: 0 (-$star-size);
-    display: block;
+    opacity: 1;
     animation-duration: 1s;
     animation-name: grow;
     animation-fill-mode: forwards;

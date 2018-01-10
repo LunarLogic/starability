@@ -151,5 +151,6 @@
 .starability-slot > input:checked ~ label,
 .starability-slot > input:hover ~ label,
 .starability-slot > input:focus ~ label {
+  -webkit-transition: background-position .7s;
   transition: background-position .7s;
 }

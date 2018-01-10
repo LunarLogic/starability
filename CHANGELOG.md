@@ -2,6 +2,14 @@
 All changes will be listed here (since version v.0.1.0)
 Project uses [Semantic Versioning](http://semver.org/).
 
+## [2.2.0] - 2018-01-10
+### Changed
+- Elminate browser repaints by adding "will-change: contents" to fieldsets with animation and changing the way animated pseudoelements are applied.
+
+### Fixed
+- Fix Autoprefixer build.
+- Fix "heart" animation in Safari.
+
 ## [2.1.1] - 2017-11-11
 ### Added
 - An outline around all stars after user focuses on the fieldset with keyboard.
