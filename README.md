@@ -94,6 +94,7 @@ For now you can choose one of the animations listed below. Go to the [demo](http
   - starability-checkmark
   - starability-heart
   - starability-heartbeat
+  - starability-coinFlip (by [Paulina Materna](https://github.com/paulinamaterna))
 
 ## Supported browsers
 
