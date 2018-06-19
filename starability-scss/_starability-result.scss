@@ -26,4 +26,14 @@
 
     $star-count-result: $star-count-result - 1;
   }
+  
+  @media screen and (min-resolution: 192dpi) {
+    background-image: $img-stars-sprite-2x;
+    background-size: $star-size auto;
+
+    &:after {
+      background-image: $img-stars-sprite-2x;
+      background-size: $star-size auto;
+    }
+  }
 }
