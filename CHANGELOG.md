@@ -2,6 +2,17 @@
 All changes will be listed here (since version v.0.1.0)
 Project uses [Semantic Versioning](http://semver.org/).
 
+## [2.4.0] - 2018-06-20
+### Added
+- Add support for disabled state on hover.
+
+### Changed
+- Update README with information how to support half-stars in rating results.
+- Update README with information about contributors.
+
+### Fixed
+- Starability result uses images that support high pixel density screens thanks to [Mislav Marohnić](https://github.com/mislav)
+
 ## [2.3.0] - 2018-01-15
 ### Added
 - Add animation coinFlip proposed by [Paulina Materna](https://github.com/paulinamaterna)

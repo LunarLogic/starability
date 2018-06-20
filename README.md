@@ -131,6 +131,8 @@ You can add the static results of the rating anywhere you need it. To indicate h
   </p>
 ```
 
+There is no official support for half-stars, as we don't want to make the library output bigger than needed, but you can easily add the support for showing half-stars in the rating results. To do so, [check the answer in this issue](https://github.com/LunarLogic/starability/issues/26#issuecomment-367013528).
+
 ## Further customisation with SASS
 
 If you are well-versed with SASS, you can easily adjust rating widget to your needs, e.g. have a 10-star based system or turn off outline and hover. It can be done by setting `true`/`false` values to the variables in the [_variables.scss file](https://github.com/LunarLogic/starability/blob/master/starability-scss/_variables.scss) and running the gulp task to process the files. Of course, to have a 10-stars system you also need add additional radio inputs in your HTML.
@@ -140,6 +142,20 @@ If you are not using SCSS syntax, you can also have a 10-star based system. Just
 ## Changelog
 
 Check what was changed in the newest version in the [Changelog](https://github.com/LunarLogic/starability/blob/master/CHANGELOG.md).
+
+## Contributors
+
+The library wouldn't be what it is now without:
+
+  - [Anna Migas](https://github.com/szynszyliszys)
+  - [Paulina Materna](https://github.com/paulinamaterna)
+  - [Scott O'Hara](https://github.com/scottaohara)
+  - [Mislav Marohnić](https://github.com/mislav)
+  - [Dan Dascalescu](https://github.com/dandv)
+  - [Steve Lacey](https://github.com/stevelacey)
+  - [Artur Parkhisenko](https://github.com/arturparkhisenko)
+  - [Barry Els](https://github.com/barryels)
+  - [Alex Carpenter](https://github.com/alexcarpenter)
 
 ## License
 
