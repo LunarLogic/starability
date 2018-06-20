@@ -136,6 +136,10 @@
   opacity: 1;
 }
 
+.starability-heart > input:focus + label {
+  outline: 1px dotted #999;
+}
+
 .starability-heart .starability-focus-ring {
   position: absolute;
   left: 0;

@@ -108,6 +108,10 @@
   opacity: 1;
 }
 
+.starability-growRotate > input:focus + label {
+  outline: 1px dotted #999;
+}
+
 .starability-growRotate .starability-focus-ring {
   position: absolute;
   left: 0;

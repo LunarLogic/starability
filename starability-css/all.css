@@ -73,6 +73,10 @@
   opacity: 1;
 }
 
+.starability-basic > input:focus + label {
+  outline: 1px dotted #999;
+}
+
 .starability-basic .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -217,6 +221,10 @@
 
 .starability-slot > input:hover + label::before {
   opacity: 1;
+}
+
+.starability-slot > input:focus + label {
+  outline: 1px dotted #999;
 }
 
 .starability-slot .starability-focus-ring {
@@ -405,6 +413,10 @@
 
 .starability-grow > input:hover + label::before {
   opacity: 1;
+}
+
+.starability-grow > input:focus + label {
+  outline: 1px dotted #999;
 }
 
 .starability-grow .starability-focus-ring {
@@ -618,6 +630,10 @@
   opacity: 1;
 }
 
+.starability-growRotate > input:focus + label {
+  outline: 1px dotted #999;
+}
+
 .starability-growRotate .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -823,6 +839,10 @@
 
 .starability-fade > input:hover + label::before {
   opacity: 1;
+}
+
+.starability-fade > input:focus + label {
+  outline: 1px dotted #999;
 }
 
 .starability-fade .starability-focus-ring {
@@ -1039,6 +1059,10 @@
 
 .starability-checkmark > input:hover + label::before {
   opacity: 1;
+}
+
+.starability-checkmark > input:focus + label {
+  outline: 1px dotted #999;
 }
 
 .starability-checkmark .starability-focus-ring {
@@ -1302,6 +1326,10 @@
   opacity: 1;
 }
 
+.starability-heart > input:focus + label {
+  outline: 1px dotted #999;
+}
+
 .starability-heart .starability-focus-ring {
   position: absolute;
   left: 0;
@@ -1537,6 +1565,10 @@
 
 .starability-heartbeat > input:hover + label::before {
   opacity: 1;
+}
+
+.starability-heartbeat > input:focus + label {
+  outline: 1px dotted #999;
 }
 
 .starability-heartbeat .starability-focus-ring {
@@ -1794,6 +1826,10 @@
 
 .starability-coinFlip > input:hover + label::before {
   opacity: 1;
+}
+
+.starability-coinFlip > input:focus + label {
+  outline: 1px dotted #999;
 }
 
 .starability-coinFlip .starability-focus-ring {

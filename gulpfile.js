@@ -22,7 +22,7 @@ gulp.task('output-css', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('scss/**/*.scss', ['output-css']);
+  gulp.watch('starability-scss/**/*.scss', ['output-css']);
 });
 
 gulp.task('default', function(callback) {

@@ -152,6 +152,10 @@
   opacity: 1;
 }
 
+.starability-coinFlip > input:focus + label {
+  outline: 1px dotted #999;
+}
+
 .starability-coinFlip .starability-focus-ring {
   position: absolute;
   left: 0;
