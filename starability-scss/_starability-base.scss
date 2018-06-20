@@ -24,16 +24,20 @@
     background-position: 0 (-$star-size);
   }
 
+  > input[disabled]:hover + label {
+    cursor: default;
+  }
+
   @if ($hover-enabled) {
-    > input:hover ~ label {
+    > input:not([disabled]):hover ~ label {
       background-position: 0 0;
     }
 
-    > input:hover + label {
+    > input:not([disabled]):hover + label {
       background-position: 0 (-$star-size);
     }
 
-    > input:hover + label::before {
+    > input:not([disabled]):hover + label::before {
       opacity: 1;
     }
   }
