@@ -59,7 +59,7 @@
       opacity: 0;
     }
 
-    > #no-rate:focus ~ .starability-focus-ring {
+    > .input-no-rate:focus ~ .starability-focus-ring {
       opacity: 1;
     }
   }
@@ -108,6 +108,39 @@
     @media screen and (min-resolution: 192dpi) {
       background-image: $img-stars-sprite-2x;
       background-size: $star-size auto;
+    }
+  }
+
+  // To make the rating widget accessible in high contrast, we remove the styling.
+  @media screen and (-ms-high-contrast: active) {
+    width: auto;
+
+    > input {
+      position: static;
+      margin-right: 0;
+      opacity: 1;
+    }
+
+    .input-no-rate {
+      display: none;
+    }
+
+    > label {
+      display: inline;
+      float: none;
+      width: auto;
+      height: auto;
+      font-size: 1em;
+      color: inherit;
+      background: none;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
     }
   }
 }
