@@ -263,10 +263,7 @@
     color: inherit;
     background: none;
   }
-  .starability-coinFlip > label::before {
-    display: none;
-  }
-  .starability-coinFlip > label::after {
+  .starability-coinFlip > label::before, .starability-coinFlip > label::after {
     display: none;
   }
 }

@@ -19,3 +19,6 @@ $accessible-focus-ring: true !default;
 
 // if true, stars are highlighted on hover (causes website repaints)
 $hover-enabled: true !default;
+
+// if true, there is no styling in high contrast mode on Windows to ensure Accessibility
+$high-contrast-enabled: true !default;

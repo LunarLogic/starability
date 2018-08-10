@@ -2,6 +2,10 @@
 All changes will be listed here (since version v.0.1.0)
 Project uses [Semantic Versioning](http://semver.org/).
 
+## [2.4.1] - 2018-08-10
+### Added
+- Add support for high contrast mode on Windows.
+
 ## [2.4.0] - 2018-06-20
 ### Added
 - Add support for disabled state on hover.

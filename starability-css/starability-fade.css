@@ -215,10 +215,7 @@
     color: inherit;
     background: none;
   }
-  .starability-fade > label::before {
-    display: none;
-  }
-  .starability-fade > label::after {
+  .starability-fade > label::before, .starability-fade > label::after {
     display: none;
   }
 }

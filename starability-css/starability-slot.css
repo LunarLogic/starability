@@ -184,10 +184,7 @@
     color: inherit;
     background: none;
   }
-  .starability-slot > label::before {
-    display: none;
-  }
-  .starability-slot > label::after {
+  .starability-slot > label::before, .starability-slot > label::after {
     display: none;
   }
 }

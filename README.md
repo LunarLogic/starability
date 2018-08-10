@@ -6,7 +6,7 @@ Accessible rating forms with cute animations on top. The name is the combination
 
 **Remember:** to submit the data you will need to add a bit of your own code. Here we have just a fieldset with a collection of radio buttons, neatly styled. **There are no dependencies in this library.**
 
-**Important:** The library does not rely on a reverse order of inputs any more. This means that the issue with the keyboard arrows moving in a reverse direction is no longer there. It is strongly advised to update the HTML structure in your project, although the updated CSS doesn't break the functionality even for [the previous version of HTML markup](https://github.com/LunarLogic/starability/blob/f3b34818d6b704465278f69dde506c78a6a6f444/README.md#how-to-use).
+**Important:** Since version 2.0 the library does not rely on a reverse order of inputs. This means that the issue with the keyboard arrows moving in a reverse direction is no longer there. It is strongly advised to update the HTML structure in your project, although the updated CSS doesn't break the functionality even for [the previous version of HTML markup](https://github.com/LunarLogic/starability/blob/f3b34818d6b704465278f69dde506c78a6a6f444/README.md#how-to-use).
 
 ## Demo
 
@@ -109,6 +109,10 @@ This rating system by default reacts to `:hover`, changing the background image 
   background-position: 0 -30px;
 }
 ```
+
+## Disabling high contrast mode support
+
+This rating system by default supports high contrast mode for the Windows users. This means that if user is using high contrast mode, there is no star styling and the regular fieldset with checkboxes is displayed. It is not advised to turn this mode off, but it is possible to do that by setting the `$high-contrast-enabled` variable to `false` in [_variables.scss file](https://github.com/LunarLogic/starability/blob/master/starability-scss/_variables.scss)
 
 ## Accessible outline
 

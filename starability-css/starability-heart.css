@@ -247,10 +247,7 @@
     color: inherit;
     background: none;
   }
-  .starability-heart > label::before {
-    display: none;
-  }
-  .starability-heart > label::after {
+  .starability-heart > label::before, .starability-heart > label::after {
     display: none;
   }
 }

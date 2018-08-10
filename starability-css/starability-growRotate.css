@@ -219,10 +219,7 @@
     color: inherit;
     background: none;
   }
-  .starability-growRotate > label::before {
-    display: none;
-  }
-  .starability-growRotate > label::after {
+  .starability-growRotate > label::before, .starability-growRotate > label::after {
     display: none;
   }
 }

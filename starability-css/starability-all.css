@@ -184,10 +184,7 @@
     color: inherit;
     background: none;
   }
-  .starability-basic > label::before {
-    display: none;
-  }
-  .starability-basic > label::after {
+  .starability-basic > label::before, .starability-basic > label::after {
     display: none;
   }
 }
@@ -378,10 +375,7 @@
     color: inherit;
     background: none;
   }
-  .starability-slot > label::before {
-    display: none;
-  }
-  .starability-slot > label::after {
+  .starability-slot > label::before, .starability-slot > label::after {
     display: none;
   }
 }
@@ -614,10 +608,7 @@
     color: inherit;
     background: none;
   }
-  .starability-grow > label::before {
-    display: none;
-  }
-  .starability-grow > label::after {
+  .starability-grow > label::before, .starability-grow > label::after {
     display: none;
   }
 }
@@ -873,10 +864,7 @@
     color: inherit;
     background: none;
   }
-  .starability-growRotate > label::before {
-    display: none;
-  }
-  .starability-growRotate > label::after {
+  .starability-growRotate > label::before, .starability-growRotate > label::after {
     display: none;
   }
 }
@@ -1128,10 +1116,7 @@
     color: inherit;
     background: none;
   }
-  .starability-fade > label::before {
-    display: none;
-  }
-  .starability-fade > label::after {
+  .starability-fade > label::before, .starability-fade > label::after {
     display: none;
   }
 }
@@ -1392,10 +1377,7 @@
     color: inherit;
     background: none;
   }
-  .starability-checkmark > label::before {
-    display: none;
-  }
-  .starability-checkmark > label::after {
+  .starability-checkmark > label::before, .starability-checkmark > label::after {
     display: none;
   }
 }
@@ -1701,10 +1683,7 @@
     color: inherit;
     background: none;
   }
-  .starability-heart > label::before {
-    display: none;
-  }
-  .starability-heart > label::after {
+  .starability-heart > label::before, .starability-heart > label::after {
     display: none;
   }
 }
@@ -1986,10 +1965,7 @@
     color: inherit;
     background: none;
   }
-  .starability-heartbeat > label::before {
-    display: none;
-  }
-  .starability-heartbeat > label::after {
+  .starability-heartbeat > label::before, .starability-heartbeat > label::after {
     display: none;
   }
 }
@@ -2291,10 +2267,7 @@
     color: inherit;
     background: none;
   }
-  .starability-coinFlip > label::before {
-    display: none;
-  }
-  .starability-coinFlip > label::after {
+  .starability-coinFlip > label::before, .starability-coinFlip > label::after {
     display: none;
   }
 }

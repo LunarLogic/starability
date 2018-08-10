@@ -245,10 +245,7 @@
     color: inherit;
     background: none;
   }
-  .starability-heartbeat > label::before {
-    display: none;
-  }
-  .starability-heartbeat > label::after {
+  .starability-heartbeat > label::before, .starability-heartbeat > label::after {
     display: none;
   }
 }

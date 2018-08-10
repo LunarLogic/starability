@@ -224,10 +224,7 @@
     color: inherit;
     background: none;
   }
-  .starability-checkmark > label::before {
-    display: none;
-  }
-  .starability-checkmark > label::after {
+  .starability-checkmark > label::before, .starability-checkmark > label::after {
     display: none;
   }
 }

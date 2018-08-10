@@ -111,35 +111,35 @@
     }
   }
 
-  // To make the rating widget accessible in high contrast, we remove the styling.
-  @media screen and (-ms-high-contrast: active) {
-    width: auto;
+  @if ($high-contrast-enabled) {
 
-    > input {
-      position: static;
-      margin-right: 0;
-      opacity: 1;
-    }
-
-    .input-no-rate {
-      display: none;
-    }
-
-    > label {
-      display: inline;
-      float: none;
+    // To make the rating widget accessible in high contrast, we remove the styling.
+    @media screen and (-ms-high-contrast: active) {
       width: auto;
-      height: auto;
-      font-size: 1em;
-      color: inherit;
-      background: none;
 
-      &::before {
+      > input {
+        position: static;
+        margin-right: 0;
+        opacity: 1;
+      }
+
+      .input-no-rate {
         display: none;
       }
 
-      &::after {
-        display: none;
+      > label {
+        display: inline;
+        float: none;
+        width: auto;
+        height: auto;
+        font-size: 1em;
+        color: inherit;
+        background: none;
+
+        &::before,
+        &::after {
+          display: none;
+        }
       }
     }
   }
